@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOKE|취향의 원두를 언제 어디서나 즐겨보세요</title>
+</head>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script defer src="./js/main.js"></script>
+
+<!-- google font cdn -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<!-- google icon cdn -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="./css/main.css">
+
+<body>
+  <div class="top_bn_container">
+    <div class="top_bn align_center">
+      <a href="#!">
+        <p>구독 시작하면 3,000원 즉시 할인·무료 교환·무료 배송</p>
+        <p>내 취향 커피 추천받기
+          <span class="material-symbols-rounded">
+            chevron_right
+          </span>
+        </p>
+      </a>
+      <span class="top_bn_close material-symbols-rounded">
+        close
+      </span>
+    </div><!--top_bn-->
+  </div><!--top_bn_container-->
+
+  <header class="header_container">
+    <div class="header align_center">
+      <ul class="gnb">
+        <li><a href="#!">회원가입</a></li>
+        <li><a href="#!">로그인</a></li>
+        <li><a href="#!" class="header__cart">
+          장바구니
+          <span class="cart--icon material-symbols-rounded">
+            shopping_bag
+            <strong>1</strong>
+          </span>
+        </a></li>
+      </ul><!--gnb-->
+
+      <nav class="lnb">
+        <div class="lnb__menu">
+          <div class="lnb_left">
+            <div class="ham_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <a href="#!" class="brand_search">브랜드 검색</a>
+            <a href="#!">모든 커피</a>
+            <a href="#!">내 커피 취향테스트</a>
+          </div><!--lnb_left-->
+
+          <div class="lnb_right">
+            <a href="#!">싱글오리진</a>
+            <a href="#!">블랜드</a>
+            <a href="#!">구독하기</a>
+            <div class="search_container">
+              <form action="">
+                <input type="text" id="search" name="search" required>
+                <input type="submit" id="search_submit" value="Rechercher">
+              </form>
+            </div>
+            <!-- <div class="search_container">
+              <form class="search__form">
+                <input type="search" name="searchValue" id="search" required>
+                <button>
+                  <span class="search--icon material-symbols-rounded">
+                    search
+                  </span>
+                </button>
+              </form>
+            </div> -->
+          </div><!--lnb_right-->
+        </div><!--lnb_menu-->
+        
+        <a href="./index.html" class="lnb__logo">
+          <img src="./imgs/logo.png" alt="KOKE 로고">
+        </a><!--lnb_logo-->
+      </nav><!--lnb-->
+    </div><!--header-->
+  </header><!--header_container-->
+
+  <section class="main_visual">
+    <div>
+      <img src="./imgs/main_visual_item.png" alt="main_visual_item">
+    </div>
+    <div class="swiper main_visual_Swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h2>
+            이번 커피도, 다음 커피도 <br />
+            내가 좋아하는 맛으로 즐겨요
+          </h2>
+          <p>
+            다양한 커피 중에서 내 취향 커피만 구독해요. 실패할 걱정 없어요.
+          </p>
+          <div class="visual--btn">
+            내 취향 커피 추천 받기!
+            <span class="material-symbols-rounded">
+              arrow_forward
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section><!--main_visual-->
+    
+  <section class="best align_center">
+    <div class="section__title">
+      <h3 class="title--top">BEST</h3>
+      <p class="title--sub">잘 나가는 원두, 여기 다 모았어요.</p>
+    </div><!--section_title_container-->
+    <ul class="teb__labels">
+      <li><a href="#!">BEST</a></li>
+      <li><a href="#!">달콤쌉싸름</a></li>
+      <li><a href="#!">묵직/달콤한 여운</a></li>
+      <li><a href="#!">은은하고 편안함</a></li>
+      <li><a href="#!">고소함/구수함</a></li>
+      <li><a href="#!">상큼한 산미와 향</a></li>
+    </ul><!--teb__labels-->
+    <ul class="items">
+      <li><a href="#!">
+        <div class="img__container">
+          <div class="img--box">
+            <img src="./imgs/best_01.jpg" alt="">
+          </div>
+          <ul class="img__tools">
+            <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+            <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+            <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+          </ul>
+        </div>
+
+      </a></li>
+    </ul>
+
+  </section><!--best-->
+  
+
+
+
+  <div class="block"></div>
+</body>
+</html>
