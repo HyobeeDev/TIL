@@ -29,225 +29,6 @@
 
 */
 
-/* 서체 - 국문 noto sans kr, 영문 rubik */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
-
-/* common */
-* {
-  margin: 0; padding: 0; font-size: 17px;
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #222;
-}
-li {list-style: none;}
-a {text-decoration: none;}
-
-.align_center {width: 1278px; margin: 0 auto;}
-
-/*-------------top_bn---------------*/
-.top_bn_container {background-color: #FDEAE0;}
-.top_bn {
-  position: relative;
-  height: 50px;
-}
-.top_bn a {
-  display: flex;
-  justify-content: center;
-  line-height: 50px;
-}
-.top_bn a p {
-  font-size: 13px;
-}
-.top_bn a p:first-child {
-  color: #ff6c57;
-  margin-right: 10px;
-}
-.top_bn a p:last-child {
-  font-weight: 500;
-}
-.top_bn a p span {
-  font-size: 16px;
-  vertical-align: middle;
-}
-.top_bn .top_bn_close {
-  position: absolute;
-  top: 50%; right: 0;
-  transform: translateY(-50%);
-  font-size: 18px;
-}
-
-
-/*-------------header---------------*/
-
-.header_container {
-  position: sticky;
-  padding-top: 50px; left: 0;
-  top: -50px;
-  width: 100%;
-  margin: 0 auto;
-  background-color: rgba(255, 255, 255, .8);
-  z-index: 100;
-}
-
-.gnb {
-  text-align: right;
-  padding: 20px 0;
-}
-.gnb li {
-  display: inline-block;
-  margin-left: 30px;
-}
-.gnb li a {
-  font-size: 13px;
-}
-.cart--icon {
-  position: relative;
-  vertical-align: middle;
-  font-size: 20px;
-  color: #666;
-  margin: 0 10px 0 0;
-}
-.cart--icon strong {
-  position: absolute;
-  top: -5px; left: 15px;
-  width: 12px;
-  height: 12px;
-  font-size: 5px;
-  color: white;
-  background-color: #ff6c57;
-  border-radius: 50%;
-  text-align: center;
-}
-
-.lnb {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-.lnb__menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 278px;
-}
-.lnb__menu>div {
-  display: flex;
-  justify-content: space-between;
-  width: 500px;
-  height: 50px;
-  font-weight: 400;
-}
-.lnb_left a:after, .lnb_right a:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 1px;
-  background-color: #e64f37;
-  transition: all .2s ease;
-}
-.lnb_left a:nth-child(2)::after {
-  transform: translateX(-45px);
-}
-.lnb_left a:hover::after,
-.lnb_right a:hover::after {
-  width: 100%;
-}
-
-.ham_btn {
-  position: relative;
-  top: 0; left: 0;
-  width: 24px;
-  height: 20px;
-  margin-top: 5px;
-  cursor: pointer;
-}
-.ham_btn span {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #222;
-  text-indent: -999999px;
-  transition: all .2s ease;
-}
-.ham_btn span:nth-child(1) {top: 0;}
-.ham_btn span:nth-child(2) {top: 7px;}
-.ham_btn span:nth-child(3) {top: 7px;}
-.ham_btn span:nth-child(4) {top: 14px;}
-
-.ham_btn.active span:nth-child(1) {opacity: 0;}
-.ham_btn.active span:nth-child(2) {transform: rotate(-45deg);}
-.ham_btn.active span:nth-child(3) {transform: rotate(45deg);}
-.ham_btn.active span:nth-child(4) {opacity: 0;}
-
-.brand_search::after {
-  display: inline-block;
-  content: '';
-  width: 1px;
-  height: 24px;
-  background-color: #ccc;
-  margin-left: 45px;
-  vertical-align: middle;
-}
-
-.search_container { /*검색버튼*/
-  position: relative;
-  display: inline-block;
-  width: 150px;
-}
-.search--bar {
-  display: inline-block;
-  position: absolute;
-  top: 0; right: 0;
-  width: 0px;
-  z-index: 3;
-  border: none;
-  outline: none;
-  padding: 3px 33px 3px 3px;
-  font-size: 17px;
-  color: #555;
-  background: none;
-  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
-  cursor: pointer;
-}
-.search--bar:focus {
-  width: 120px;
-  z-index: 1;
-  border-bottom: 1px solid #e64f37;
-  cursor: text;
-}
-.search--icon {
-  display: inline-block;
-  position: absolute;
-  top: 0; right: 0;
-  z-index: 2;
-  width: 30px;
-  border: none;
-  color: #e64f37;
-  text-indent: -999999px;  
-  background: url('../imgs/search_icon.png') no-repeat center center/cover;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: opacity .4s ease;
-}
-.search--icon:hover {
-  opacity: 1;
-}
-
-.lnb__logo {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 150px;
-  height: 54px;
-  padding: 20px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, .8);
-}
-.lnb__logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 
 
 /*-------------main_visual---------------*/
@@ -257,6 +38,7 @@ a {text-decoration: none;}
   width: 100%;
   height: 900px;
   background: url('../imgs/main_visual_bg.jpg') no-repeat center center/cover;
+  transform: translateY(-116px);
 }
 .main_visual>div:first-child {
   width: 100%;
@@ -270,9 +52,15 @@ a {text-decoration: none;}
 }
 .main_visual_Swiper {
   position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
+  top: 260px; left: 50%;
+  /* transform: translate(-50%, -50%); */
+  transform: translateX(-50%);
   text-align: center;
+}
+.main_visual_Swiper .swiper-slide {
+  height: 500px;
+  padding-top: 70px;
+  box-sizing: border-box;
 }
 .main_visual_Swiper h2 {
   font-size: 39px;
@@ -281,11 +69,23 @@ a {text-decoration: none;}
   font-size: 19px;
   margin: 30px 0 60px 0;
 }
+.main_visual_Swiper .swiper-button-prev {
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  color: #bbb;
+}
+.main_visual_Swiper .swiper-button-next {
+  top: 460px;
+  right: 50%;
+  transform: translateX(50%) rotate(90deg);
+}
 
 .main_visual .emphasis--btn {
   position: absolute;
-  bottom: 24%; left: 50%;
+  bottom: 28%; left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 .emphasis--btn {
   margin: 0 auto;
@@ -868,17 +668,3 @@ a {text-decoration: none;}
   color: #999;
   font-size: 1.5rem;
 }
-
-/*-------------top_bn---------------*/
-/*-------------top_bn---------------*/
-/*-------------top_bn---------------*/
-/*-------------top_bn---------------*/
-/*-------------top_bn---------------*/
-/*-------------top_bn---------------*/
-/*-------------top_bn---------------*/
-/*-------------top_bn---------------*/
-/*-------------top_bn---------------*/
-
-
-
-.block {height: 1000px;}

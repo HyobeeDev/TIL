@@ -1,17 +1,48 @@
-$('.ham_btn').on('click', function(){
-  $('.ham_btn').toggleClass('active');
-  // $('nav').toggleClass('active');   // 나중에 넣기
+// top_bn
+let topBnClose = document.querySelector('.top_bn_close')
+let topBn = document.querySelector('.top_bn_container')
+
+topBnClose.addEventListener('click', () => {
+  topBn.style.height = '0'
 })
 
-//search - css 가능
-// const search = document.querySelector('#search')
 
-// search.addEventListener('focus', () => {
-//     search.setAttribute('placeholder', '검색어를 입력하세요')
-// })
-// search.addEventListener('blur', () => {
-//     search.setAttribute('placeholder', '')
-// })
+$(function(){
+  // $(window).scroll(function(){
+  //     if($(this).scrollTop() >= 200){
+  //         $('nav').addClass('sticky')
+  //     } else {
+  //         $('nav').removeClass('sticky')
+  //     } // lnb event
+
+  //     if($(this).scrollTop() >= 200){
+  //         $('.top').fadeIn('fast')
+  //     } else {
+  //         $('.top').fadeOut('fast')
+  //     } // top event
+  // })
+
+  // $('.top_btn').click(function(e){
+  //     e.preventDefault()
+      
+  //     $('html, body').stop().animate({
+  //         scrollTop : 0
+  //     }, 500)
+  // }) // top btn
+
+  // $('.down_btn').click(function(e){
+  //     e.preventDefault()
+      
+  //     $('html, body').stop().animate({
+  //         scrollTop : 0
+  //     }, 500)
+  // }) // down btn
+
+  // $(window).scrollTo({top:0, left:0}, 500)
+
+  // $(window).scrollTo(this.hash || 0, 1000)
+
+})
 
 
 

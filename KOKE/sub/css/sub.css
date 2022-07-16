@@ -1,0 +1,161 @@
+/* style guide
+1278px, 12칼럼(1칼럼 79px, 거터 30px)
+섹션 바텀값 100px 내외
+
+<main color>
+검정색        color: #222;
+흰색          color: #fff;
+<point color>
+주황색     color: #ff6c57;
+<sub color>
+연노란색   color: #faf7e8;
+연주황색   color: #FDEAE0;
+
+<제목>
+국문     font-size: 39px;
+영문     font-size: 46px;
+<부제목>
+국문     font-size: 19px;
+영문     font-size: 32px;
+<탭>
+국문     font-size: 18px;
+영문     font-size: 20px;
+<본문>
+상품이름 font-size: 17px;
+맛       font-size: 16px;
+가격     font-size: 16px; font-weight: 700;
+*/
+
+
+
+/*-------------path---------------*/
+.path {padding: 30px 0;}
+.path li {display: inline-block;}
+.path li a {font-size: 13px; color: #777;}
+
+
+
+/*-------------sub_title---------------*/
+.sub_title {text-align: center;}
+.sub_title h2 {font-size: 23px;}
+.sub_title .top_options {margin: 20px;}
+.sub_title .top_options a {
+  display: inline-block;
+  margin-right: 30px;
+}
+.sub_title .top_options a:last-child {
+  margin-right: 0;
+}
+.top_options_active {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+
+
+
+/* 삭제대기 */
+
+
+.left-side {
+  width:250px; 
+  height:250px; 
+  background:#ddd; 
+  display:inline-block;
+  position:sticky; 
+  top:50px;
+}
+
+/* --------- */
+
+.section {
+  height:250px; 
+  background:#bbb; 
+  text-align:center; 
+  padding:20px 0;
+}
+.main-section {
+  width:1100px; 
+  margin:50px auto; 
+  clear:both;
+}
+.main-section:before, .main-section:after {content:''; display:table; clear:both;}
+
+.right-side {width:750px; display:inline-block; vertical-align:top; float:right;}
+.right-side div {background:#999; height:250px;}
+.right-side div + div {margin-top:50px;}
+
+a {background:#000; color:#fff; padding:15px; text-decoration:none; position:relative; display:inline-block;}
+a:hover:after {content:''; width:100%; height:2px; background:#bbb; position:absolute; left:0; bottom:4px;}
+
+
+
+
+
+.box{
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.box span{
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-bottom: 2px solid #000;
+	border-right: 2px solid #000;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+
+.box span:nth-child(2)
+{
+	animation-delay: -0.2s;
+}
+
+.box span:nth-child(3)
+{
+	animation-delay: -0.4s;
+}
+
+@keyframes animate{
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+}
+
+
+/* 삭제대기 */
+
+
+
+/*-------------path---------------*/
+/*-------------path---------------*/
+/*-------------path---------------*/
+
+
+.box {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.box::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+
+
+.block {height: 1000px;}
+
+
+
