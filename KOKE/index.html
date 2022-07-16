@@ -9,6 +9,10 @@
 <!-- swiper cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.css" />
+<!-- gsap cdn : 애니메이션 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+<!-- gsap cdn : 애니메이션 + 화면이동 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./js/jquery-3.6.0.min.js"></script>
@@ -80,6 +84,7 @@
                 <input type="submit" id="search_submit" class="search--icon" value="Rechercher">
               </form>
             </div>
+            <div class="free--delibery">무료배송</div>
           </div><!--lnb_right-->
         </div><!--lnb_menu-->
         
@@ -159,9 +164,9 @@
     <ul class="items">
       <li>
         <div class="img_container">
-          <div class="item__img">
+          <a href="#!" class="item__img">
             <img src="./imgs/best_01.jpg" alt="best_01">
-          </div>
+          </a>
           <ul class="img__tools">
             <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
             <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
@@ -179,9 +184,9 @@
       </li><!--item01-->
       <li>
         <div class="img_container">
-          <div class="item__img">
+          <a href="#!" class="item__img">
             <img src="./imgs/best_02.jpg" alt="best_02">
-          </div>
+          </a>
           <ul class="img__tools">
             <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
             <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
@@ -199,9 +204,9 @@
       </li><!--item02-->
       <li>
         <div class="img_container">
-          <div class="item__img">
+          <a href="#!" class="item__img">
             <img src="./imgs/best_03.jpg" alt="best_03">
-          </div>
+          </a>
           <ul class="img__tools">
             <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
             <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
@@ -219,9 +224,9 @@
       </li><!--item03-->
       <li>
         <div class="img_container">
-          <div class="item__img">
+          <a href="#!" class="item__img">
             <img src="./imgs/best_04.jpg" alt="best_04">
-          </div>
+          </a>
           <ul class="img__tools">
             <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
             <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
@@ -250,9 +255,9 @@
     <ul class="items">
       <li>
         <div class="img_container">
-          <div class="item__img">
+          <a href="#!" class="item__img">
             <img src="./imgs/new_01.jpg" alt="new_01">
-          </div>
+          </a>
           <ul class="img__tools">
             <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
             <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
@@ -270,9 +275,9 @@
       </li><!--item01-->
       <li>
         <div class="img_container">
-          <div class="item__img">
+          <a href="#!" class="item__img">
             <img src="./imgs/new_02.jpg" alt="new_02">
-          </div>
+          </a>
           <ul class="img__tools">
             <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
             <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
@@ -290,9 +295,9 @@
       </li><!--item02-->
       <li>
         <div class="img_container">
-          <div class="item__img">
+          <a href="#!" class="item__img">
             <img src="./imgs/new_03.png" alt="new_03">
-          </div>
+          </a>
           <ul class="img__tools">
             <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
             <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
@@ -310,9 +315,9 @@
       </li><!--item03-->
       <li>
         <div class="img_container">
-          <div class="item__img">
+          <a href="#!" class="item__img">
             <img src="./imgs/new_04.png" alt="new_04">
-          </div>
+          </a>
           <ul class="img__tools">
             <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
             <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
@@ -807,39 +812,40 @@
 
   <div class="quick_menu_container">
     <div class="quick_menu">
-      <div>
-        <p class="menu--name">검색</p>
+      <div class="quickBtn01">
+        <p class="menu--name quick--tooltip01">검색</p>
         <a href="#!">
           <span class="material-symbols-rounded menu--icon">
             search
           </span>
         </a>
       </div>
-      <div>
-        <p class="menu--name">장바구니(1)</p>
+      <div class="quickBtn02">
+        <p class="menu--name quick--tooltip02">장바구니(1)</p>
         <a href="#!">
           <span class="material-symbols-rounded menu--icon">
             shopping_bag
           </span>
         </a>
       </div>
-      <div>
-        <p class="menu--name">배송조회</p>
+      <div class="quickBtn03">
+        <p class="menu--name quick--tooltip03">배송조회</p>
         <a href="#!">
           <span class="material-symbols-rounded menu--icon">
             local_shipping
           </span>
         </a>
       </div>
-      <div>
-        <p class="menu--name">최근 본 상품</p>
+      <div class="quickBtn04">
+        <p class="menu--name quick--tooltip04">최근 본 상품</p>
         <a href="#!">
           <span class="material-symbols-rounded menu--icon">
             history
           </span>
         </a>
       </div>
-    </div>
+    </div><!--quick_menu-->
+
     <div class="top_btns">
       <a href="#!" class="top_btn">
         <span class="material-symbols-rounded menu--icon">
@@ -851,17 +857,17 @@
           keyboard_double_arrow_down
         </span>
       </a>
-    </div>
+    </div><!--top_btns-->
   </div><!--quick_menu_container-->
     
   <div class="floating_bn">
-    <div class="bn__default">
+    <a href="#!" class="bn__default">
       <div class="default--img">
         <img src="./imgs/floating_banner_img.png" alt="floating_banner_img">
       </div>
       
       <p>내 취향 저격 커피는?</p>
-    </div>
+    </a>
   </div><!--floating_bn-->
 
 </body>
