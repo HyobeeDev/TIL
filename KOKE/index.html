@@ -64,10 +64,10 @@
         <div class="lnb__menu">
           <div class="lnb_left">
             <div class="ham_btn">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
+              <span>btn_line1</span>
+              <span>btn_line2</span>
+              <span>btn_line3</span>
+              <span>btn_line4</span>
             </div>
             <a href="#!" class="brand_search">브랜드 검색</a>
             <a href="#!">모든 커피</a>
@@ -97,6 +97,103 @@
           </div>
         </div><!--lnb_logo_container-->
       </nav><!--lnb-->
+      
+      <div class="lnb_menu_sheet">
+        <div class="ham__menu">
+          <ul class="align_center">
+            <li><a href="#!" class="depth1">모든 커피
+              <ul>
+                <li><a href="#!" class="depth2">브랜드</a></li>
+                <li><a href="#!" class="depth2">싱글오리진</a></li>
+                <li><a href="#!" class="depth2">블랜드</a></li>
+              </ul>
+            </a></li>
+            <li><a href="#!" class="depth1">내 커피 취향테스트
+              <ul>
+                <li><a href="#!" class="depth2">내 커피 취향테스트</a></li>
+                <li><a href="#!" class="depth2">구독하기</a></li>
+                <li><a href="#!" class="depth2">구독후기</a></li>
+              </ul>
+            </a></li>
+            <li><a href="#!" class="depth1">커뮤니티
+              <ul>
+                <li><a href="#!" class="depth2">EVENT/NEWS</a></li>
+                <li><a href="#!" class="depth2">REVIEW</a></li>
+              </ul>
+            </a></li>
+            <li><a href="#!" class="depth1">고객센터
+              <ul>
+                <li><a href="#!" class="depth2">공지사항</a></li>
+                <li><a href="#!" class="depth2">Q&A</a></li>
+                <li><a href="#!" class="depth2">1:1문의</a></li>
+              </ul>
+            </a></li>
+            <li><a href="#!" class="depth1">ABOUT US
+              <ul>
+                <li><a href="#!" class="depth2">코케:KOKE</a></li>
+                <li><a href="#!" class="depth2">CONTACT US</a></li>
+              </ul>
+            </a></li>
+          </ul>
+        </div><!--ham__menu-->
+        <div class="brand__menu">
+          <ul class="index_text align_center">
+            <li><a href="#!">ALL</a></li>
+            <li><a href="#!">ㄱ</a></li>
+            <li><a href="#!">ㄴ</a></li>
+            <li><a href="#!">ㄷ</a></li>
+            <li><a href="#!">ㄹ</a></li>
+            <li><a href="#!">ㅁ</a></li>
+            <li><a href="#!">ㅂ</a></li>
+            <li><a href="#!">ㅅ</a></li>
+            <li><a href="#!">ㅇ</a></li>
+            <li><a href="#!">ㅈ</a></li>
+            <li><a href="#!">ㅊ</a></li>
+            <li><a href="#!">ㅋ</a></li>
+            <li><a href="#!">ㅌ</a></li>
+            <li><a href="#!">ㅍ</a></li>
+            <li><a href="#!">ㅎ</a></li>
+          </ul>
+          <ul class="brands align_center">
+            <li>
+              <a href="#!">리플로우 커피</a>
+              <a href="#!">슬러핀 커피</a>
+              <a href="#!">프로토콜 커피</a>
+              <a href="#!">컬러드 빈</a>
+              <a href="#!">오드이븐</a>
+              <a href="#!">콩볶는 사람들</a>
+              <a href="#!">커피몽타주</a>
+              <a href="#!">영앤도터스</a>
+              <a href="#!">하늘에 커피</a>
+              <a href="#!">디벨로핑룸</a>
+            </li>
+            <li>
+              <a href="#!">디카프워크룸</a>
+              <a href="#!">리플렉트 커피</a>
+              <a href="#!">토치 커피</a>
+              <a href="#!">카페플롬</a>
+              <a href="#!">하우트 커피컴퍼니</a>
+              <a href="#!">커넥츠커피</a>
+              <a href="#!">폰트 커피</a>
+              <a href="#!">차군 커피</a>
+              <a href="#!">알렉스더커피</a>
+              <a href="#!">수수 커피</a>
+            </li>
+            <li>
+              <a href="#!">웨이브온 커피</a>
+              <a href="#!">55도 커피</a>
+              <a href="#!">펠트</a>
+              <a href="#!">식물학 커피</a>
+              <a href="#!">히떼 로스터리</a>
+              <a href="#!">베르크</a>
+              <a href="#!">한국 커피</a>
+              <a href="#!">리버벨</a>
+              <a href="#!">보사노바</a>
+              <a href="#!">디카 커피랩</a>
+            </li>
+          </ul>
+        </div>
+      </div><!--lnb_menu_sheet-->
     </div><!--header-->
   </header><!--header_container-->
 
@@ -153,96 +250,508 @@
     </div><!--section_title_container-->
 
     <ul class="teb__labels">
-      <li><a href="#!">BEST</a></li>
-      <li><a href="#!">달콤쌉싸름</a></li>
-      <li><a href="#!">묵직/달콤한 여운</a></li>
-      <li><a href="#!">은은하고 편안함</a></li>
-      <li><a href="#!">고소함/구수함</a></li>
-      <li><a href="#!">상큼한 산미와 향</a></li>
+      <li><a href="#best01" class="best_teb_active">BEST</a></li>
+      <li><a href="#best02">달콤쌉싸름</a></li>
+      <li><a href="#best03">묵직/달콤한 여운</a></li>
+      <li><a href="#best04">은은하고 편안함</a></li>
+      <li><a href="#best05">고소함/구수함</a></li>
+      <li><a href="#best06">상큼한 산미와 향</a></li>
     </ul><!--teb__labels-->
     
-    <ul class="items">
-      <li>
-        <div class="img_container">
-          <a href="#!" class="item__img">
-            <img src="./imgs/best_01.jpg" alt="best_01">
-          </a>
-          <ul class="img__tools">
-            <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
-          </ul>
-          <div class="roastery__logo">
-            <img src="./imgs/roastery_logo_01.jpg" alt="roastery_logo">
+    <div class="items">
+      <ul id="best01" class="item best_sheet_active">
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_01.jpg" alt="best_01">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_01.jpg" alt="roastery_logo">
+            </div>
           </div>
-        </div>
-        <ul class="text_container">
-          <li>[콩볶는사람들] 스프링 블렌드</li>
-          <li>묵직/달콤한 여운</li>
-          <li>12,000원</li>
-        </ul>
-      </li><!--item01-->
-      <li>
-        <div class="img_container">
-          <a href="#!" class="item__img">
-            <img src="./imgs/best_02.jpg" alt="best_02">
-          </a>
-          <ul class="img__tools">
-            <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+          <ul class="text_container">
+            <li>[콩볶는사람들] 스프링 블렌드</li>
+            <li>묵직/달콤한 여운</li>
+            <li>12,000원</li>
           </ul>
-          <div class="roastery__logo">
-            <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+        </li><!--item01-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_02.jpg" alt="best_02">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+            </div>
           </div>
-        </div>
-        <ul class="text_container">
-          <li>[영앤도터스] 콜린</li>
-          <li>상큼한 산미와 향</li>
-          <li>11,000원</li>
-        </ul>
-      </li><!--item02-->
-      <li>
-        <div class="img_container">
-          <a href="#!" class="item__img">
-            <img src="./imgs/best_03.jpg" alt="best_03">
-          </a>
-          <ul class="img__tools">
-            <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+          <ul class="text_container">
+            <li>[영앤도터스] 콜린</li>
+            <li>상큼한 산미와 향</li>
+            <li>11,000원</li>
           </ul>
-          <div class="roastery__logo">
-            <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+        </li><!--item02-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_03.jpg" alt="best_03">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
           </div>
-        </div>
-        <ul class="text_container">
-          <li>[커피몽타주] 비터스윗 라이트 에디션 2</li>
-          <li>달콤쌉싸름</li>
-          <li>13,000원</li>
-        </ul>
-      </li><!--item03-->
-      <li>
-        <div class="img_container">
-          <a href="#!" class="item__img">
-            <img src="./imgs/best_04.jpg" alt="best_04">
-          </a>
-          <ul class="img__tools">
-            <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+          <ul class="text_container">
+            <li>[커피몽타주] 비터스윗 라이트 에디션 2</li>
+            <li>달콤쌉싸름</li>
+            <li>13,000원</li>
           </ul>
-          <div class="roastery__logo">
-            <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+        </li><!--item03-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_04.jpg" alt="best_04">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
           </div>
-        </div>
-        <ul class="text_container">
-          <li>[커피몽타주] 센스 앤 센서빌리티</li>
-          <li>고소함/구수함</li>
-          <li>12,000원</li>
-        </ul>
-      </li><!--item04-->
-    </ul><!--items-->
+          <ul class="text_container">
+            <li>[커피몽타주] 센스 앤 센서빌리티</li>
+            <li>고소함/구수함</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item04-->
+      </ul><!--item01-->
+      <ul id="best02" class="item">
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_01.jpg" alt="best_01">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_01.jpg" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>2p</li>
+            <li>달콤쌉싸름</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item01-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_02.jpg" alt="best_02">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[영앤도터스] 콜린</li>
+            <li>달콤쌉싸름</li>
+            <li>11,000원</li>
+          </ul>
+        </li><!--item02-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_03.jpg" alt="best_03">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 비터스윗 라이트 에디션 2</li>
+            <li>달콤쌉싸름</li>
+            <li>13,000원</li>
+          </ul>
+        </li><!--item03-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_04.jpg" alt="best_04">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 센스 앤 센서빌리티</li>
+            <li>달콤쌉싸름</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item04-->
+      </ul><!--item02-->
+      <ul id="best03" class="item">
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_01.jpg" alt="best_01">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_01.jpg" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>3</li>
+            <li>묵직/달콤한 여운</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item01-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_02.jpg" alt="best_02">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[영앤도터스] 콜린</li>
+            <li>묵직/달콤한 여운</li>
+            <li>11,000원</li>
+          </ul>
+        </li><!--item02-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_03.jpg" alt="best_03">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 비터스윗 라이트 에디션 2</li>
+            <li>묵직/달콤한 여운</li>
+            <li>13,000원</li>
+          </ul>
+        </li><!--item03-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_04.jpg" alt="best_04">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 센스 앤 센서빌리티</li>
+            <li>묵직/달콤한 여운</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item04-->
+      </ul><!--item03-->
+      <ul id="best04" class="item">
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_01.jpg" alt="best_01">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_01.jpg" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>4</li>
+            <li>은은하고 편안함</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item01-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_02.jpg" alt="best_02">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[영앤도터스] 콜린</li>
+            <li>은은하고 편안함</li>
+            <li>11,000원</li>
+          </ul>
+        </li><!--item02-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_03.jpg" alt="best_03">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 비터스윗 라이트 에디션 2</li>
+            <li>은은하고 편안함</li>
+            <li>13,000원</li>
+          </ul>
+        </li><!--item03-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_04.jpg" alt="best_04">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 센스 앤 센서빌리티</li>
+            <li>은은하고 편안함</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item04-->
+      </ul><!--item04-->
+      <ul id="best05" class="item">
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_01.jpg" alt="best_01">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_01.jpg" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>5</li>
+            <li>고소함/구수함</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item01-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_02.jpg" alt="best_02">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[영앤도터스] 콜린</li>
+            <li>고소함/구수함</li>
+            <li>11,000원</li>
+          </ul>
+        </li><!--item02-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_03.jpg" alt="best_03">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 비터스윗 라이트 에디션 2</li>
+            <li>고소함/구수함</li>
+            <li>13,000원</li>
+          </ul>
+        </li><!--item03-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_04.jpg" alt="best_04">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 센스 앤 센서빌리티</li>
+            <li>고소함/구수함</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item04-->
+      </ul><!--item05-->
+      <ul id="best06" class="item">
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_01.jpg" alt="best_01">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_01.jpg" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>6</li>
+            <li>상큼한 산미와 향</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item01-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_02.jpg" alt="best_02">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[영앤도터스] 콜린</li>
+            <li>상큼한 산미와 향</li>
+            <li>11,000원</li>
+          </ul>
+        </li><!--item02-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_03.jpg" alt="best_03">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 비터스윗 라이트 에디션 2</li>
+            <li>상큼한 산미와 향</li>
+            <li>13,000원</li>
+          </ul>
+        </li><!--item03-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/best_04.jpg" alt="best_04">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_03.png" alt="roastery_logo">
+            </div>
+          </div>
+          <ul class="text_container">
+            <li>[커피몽타주] 센스 앤 센서빌리티</li>
+            <li>상큼한 산미와 향</li>
+            <li>12,000원</li>
+          </ul>
+        </li><!--item04-->
+      </ul><!--item06-->
+    </div><!--items-->
     <a href="#!" class="more--btn">자세히 보기</a>
   </section><!--best-->
 
@@ -252,88 +761,90 @@
       <p class="title--sub">새로운 원두를 즐겨보세요.</p>
     </div><!--section_title_container-->
 
-    <ul class="items">
-      <li>
-        <div class="img_container">
-          <a href="#!" class="item__img">
-            <img src="./imgs/new_01.jpg" alt="new_01">
-          </a>
-          <ul class="img__tools">
-            <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
-          </ul>
-          <div class="roastery__logo">
-            <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+    <div class="items">
+      <ul>
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/new_01.jpg" alt="new_01">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+            </div>
           </div>
-        </div>
-        <ul class="text_container">
-          <li>[영앤도터스] 룰라바이</li>
-          <li>은은하고 편안함</li>
-          <li>18,000원</li>
-        </ul>
-      </li><!--item01-->
-      <li>
-        <div class="img_container">
-          <a href="#!" class="item__img">
-            <img src="./imgs/new_02.jpg" alt="new_02">
-          </a>
-          <ul class="img__tools">
-            <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+          <ul class="text_container">
+            <li>[영앤도터스] 룰라바이</li>
+            <li>은은하고 편안함</li>
+            <li>18,000원</li>
           </ul>
-          <div class="roastery__logo">
-            <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+        </li><!--item01-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/new_02.jpg" alt="new_02">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+            </div>
           </div>
-        </div>
-        <ul class="text_container">
-          <li>[영앤도터스] 파퓨아뉴기니 모리타</li>
-          <li>은은하고 편안함</li>
-          <li>17,000원</li>
-        </ul>
-      </li><!--item02-->
-      <li>
-        <div class="img_container">
-          <a href="#!" class="item__img">
-            <img src="./imgs/new_03.png" alt="new_03">
-          </a>
-          <ul class="img__tools">
-            <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+          <ul class="text_container">
+            <li>[영앤도터스] 파퓨아뉴기니 모리타</li>
+            <li>은은하고 편안함</li>
+            <li>17,000원</li>
           </ul>
-          <div class="roastery__logo">
-            <img src="./imgs/roastery_logo_04.png" alt="roastery_logo">
+        </li><!--item02-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/new_03.png" alt="new_03">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_04.png" alt="roastery_logo">
+            </div>
           </div>
-        </div>
-        <ul class="text_container">
-          <li>[하늘에커피] 돌담 in 애월</li>
-          <li>고소함/구수함</li>
-          <li>11,000원</li>
-        </ul>
-      </li><!--item03-->
-      <li>
-        <div class="img_container">
-          <a href="#!" class="item__img">
-            <img src="./imgs/new_04.png" alt="new_04">
-          </a>
-          <ul class="img__tools">
-            <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
-            <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+          <ul class="text_container">
+            <li>[하늘에커피] 돌담 in 애월</li>
+            <li>고소함/구수함</li>
+            <li>11,000원</li>
           </ul>
-          <div class="roastery__logo">
-            <img src="./imgs/roastery_logo_04.png" alt="roastery_logo">
+        </li><!--item03-->
+        <li>
+          <div class="img_container">
+            <a href="#!" class="item__img">
+              <img src="./imgs/new_04.png" alt="new_04">
+            </a>
+            <ul class="img__tools">
+              <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_heart.png" alt="찜하기"></a></li>
+              <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
+            </ul>
+            <div class="roastery__logo">
+              <img src="./imgs/roastery_logo_04.png" alt="roastery_logo">
+            </div>
           </div>
-        </div>
-        <ul class="text_container">
-          <li>[하늘에커피] 하늘에 시그니처 블랜딩</li>
-          <li>고소함/구수함</li>
-          <li>11,500원</li>
-        </ul>
-      </li><!--item04-->
-    </ul><!--items-->
+          <ul class="text_container">
+            <li>[하늘에커피] 하늘에 시그니처 블랜딩</li>
+            <li>고소함/구수함</li>
+            <li>11,500원</li>
+          </ul>
+        </li><!--item04-->
+      </ul><!--items-->
+    </div>
     <a href="#!" class="more--btn">자세히 보기</a>
   </section><!--new-->
   
@@ -812,37 +1323,33 @@
 
   <div class="quick_menu_container">
     <div class="quick_menu">
-      <div class="quickBtn01">
-        <p class="menu--name quick--tooltip01">검색</p>
-        <a href="#!">
+      <div class="quick_btns">
+        <a href="#!" class="quick_btn01">
           <span class="material-symbols-rounded menu--icon">
             search
           </span>
         </a>
-      </div>
-      <div class="quickBtn02">
-        <p class="menu--name quick--tooltip02">장바구니(1)</p>
-        <a href="#!">
+        <a href="#!" class="quick_btn02">
           <span class="material-symbols-rounded menu--icon">
             shopping_bag
           </span>
         </a>
-      </div>
-      <div class="quickBtn03">
-        <p class="menu--name quick--tooltip03">배송조회</p>
-        <a href="#!">
+        <a href="#!" class="quick_btn03">
           <span class="material-symbols-rounded menu--icon">
             local_shipping
           </span>
         </a>
-      </div>
-      <div class="quickBtn04">
-        <p class="menu--name quick--tooltip04">최근 본 상품</p>
-        <a href="#!">
+        <a href="#!" class="quick_btn04">
           <span class="material-symbols-rounded menu--icon">
             history
           </span>
         </a>
+      </div><!--quick_btns-->
+      <div class="tooltip">
+        <span class="menu--name quick--tooltip01">검색</span>
+        <span class="menu--name quick--tooltip02">장바구니(1)</span>
+        <span class="menu--name quick--tooltip03">배송조회</span>
+        <span class="menu--name quick--tooltip04">최근 본 상품</span>
       </div>
     </div><!--quick_menu-->
 
@@ -866,7 +1373,10 @@
         <img src="./imgs/floating_banner_img.png" alt="floating_banner_img">
       </div>
       
-      <p>내 취향 저격 커피는?</p>
+      <button class="floating__btn">
+        <span>내 취향 저격 커피는?</span>
+        <span>취향테스트 하러가기!</span>
+      </button>
     </a>
   </div><!--floating_bn-->
 

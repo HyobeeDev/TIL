@@ -1,53 +1,3 @@
-// top_bn
-let topBnClose = document.querySelector('.top_bn_close')
-let topBn = document.querySelector('.top_bn_container')
-
-topBnClose.addEventListener('click', () => {
-  topBn.style.height = '0'
-})
-
-
-$(function(){
-  // $(window).scroll(function(){
-  //     if($(this).scrollTop() >= 200){
-  //         $('nav').addClass('sticky')
-  //     } else {
-  //         $('nav').removeClass('sticky')
-  //     } // lnb event
-
-  //     if($(this).scrollTop() >= 200){
-  //         $('.top').fadeIn('fast')
-  //     } else {
-  //         $('.top').fadeOut('fast')
-  //     } // top event
-  // })
-
-  // $('.top_btn').click(function(e){
-  //     e.preventDefault()
-      
-  //     $('html, body').stop().animate({
-  //         scrollTop : 0
-  //     }, 500)
-  // }) // top btn
-
-  // $('.down_btn').click(function(e){
-  //     e.preventDefault()
-      
-  //     $('html, body').stop().animate({
-  //         scrollTop : 0
-  //     }, 500)
-  // }) // down btn
-
-  // $(window).scrollTo({top:0, left:0}, 500)
-
-  // $(window).scrollTo(this.hash || 0, 1000)
-
-})
-
-
-
-
-
 // 2022 hot
 // let main = document.querySelector('.main_visual img')
 // let tab = document.querySelectorAll('.tab_imgs div img')
@@ -91,6 +41,7 @@ new Swiper('.main_visual .swiper', {
     nextEl: '.main_visual .swiper-button-next'
   }
 })
+
 
 
 // 모든 섹션들 나타나기
@@ -156,6 +107,24 @@ window.addEventListener('scroll', () => {
 }) // review
 
 
+
+// best ==> 차후에 js로 바꾸기
+$(function () {
+
+	let $menuLabels = $('.teb__labels li a'); 
+	$menuLabels.on('click', function(e) {
+		e.preventDefault();
+		$menuLabels.removeClass('best_teb_active');
+		$(this).addClass('best_teb_active');
+
+		$('.item').fadeOut(100);
+		$(this.hash).delay(100).fadeIn();
+	});
+
+});
+
+
+
 // 2022 hot - all__roasterys
 new Swiper('.all__roasterys .swiper', {
   slidesPerView: '5',
@@ -169,6 +138,8 @@ new Swiper('.all__roasterys .swiper', {
     nextEl: '.all__roasterys .swiper-button-next'
   }
 })
+
+
 
 // 2022 hot - review
 new Swiper('.review .swiper', {
@@ -184,74 +155,3 @@ new Swiper('.review .swiper', {
     nextEl: '.review .swiper-button-next'
   }
 })
-
-// quick_contents
-const quickMenu = document.querySelector('.quick_menu_container')
-
-window.addEventListener('scroll', () => {
-  if(window.scrollY > 600){
-    gsap.to(quickMenu, 0.3, {
-      opacity: 1,
-      right: 0
-    })
-  } else {
-    gsap.to(quickMenu, 0.3, {
-      opacity: 0,
-      right: -50
-    })
-  }
-})
-
-const quickBtn01 = document.querySelector('.quickBtn01')
-const quickTooltip01 = document.querySelector('.quick--tooltip01')
-const quickBtn02 = document.querySelector('.quickBtn02')
-const quickTooltip02 = document.querySelector('.quick--tooltip02')
-const quickBtn03 = document.querySelector('.quickBtn03')
-const quickTooltip03 = document.querySelector('.quick--tooltip03')
-const quickBtn04 = document.querySelector('.quickBtn04')
-const quickTooltip04 = document.querySelector('.quick--tooltip04')
-
-quickBtn01.addEventListener('mouseover', () => {
-  quickTooltip01.style.display = 'inline-block'
-})
-quickBtn01.addEventListener('mouseout', () => {
-  quickTooltip01.style.display = 'none'
-})
-quickBtn02.addEventListener('mouseover', () => {
-  quickTooltip02.style.display = 'inline-block'
-})
-quickBtn02.addEventListener('mouseout', () => {
-  quickTooltip02.style.display = 'none'
-})
-quickBtn03.addEventListener('mouseover', () => {
-  quickTooltip03.style.display = 'inline-block'
-})
-quickBtn03.addEventListener('mouseout', () => {
-  quickTooltip03.style.display = 'none'
-})
-quickBtn04.addEventListener('mouseover', () => {
-  quickTooltip04.style.display = 'inline-block'
-})
-quickBtn04.addEventListener('mouseout', () => {
-  quickTooltip04.style.display = 'none'
-})
-
-
-// scroll to top btn
-const topBtn = document.querySelector('.top_btn')
-const bottomBtn = document.querySelector('.down_btn')
-const bottomTarget = document.querySelector('.footer')
-const rootElement = document.documentElement
-
-topBtn.addEventListener('click', () => {
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
-}) // top_btn
-
-bottomBtn.addEventListener('click', () => {
-  bottomTarget.scrollIntoView({
-    behavior: "smooth"
-  })
-}) // down_btn
