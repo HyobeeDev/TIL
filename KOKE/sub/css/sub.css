@@ -54,7 +54,7 @@
 	flex: 1;
 	position: sticky;
 	top: 150px;
-	height: 200px;
+	height: 1000px;
 	overflow: auto;
 }
 .sub__title {
@@ -76,41 +76,73 @@
 	border-radius: 20px;
 	box-sizing: border-box;
 }
-.top_options_active {
+.sub__title .top_options a.top--active {
   font-weight: 500;
-  text-decoration: underline;
+	color: #ff6c57;
+	border: 1px solid #ff6c57;
 }
+
 .side__option {
+	padding: 20px;
+	border-radius: 20px;
+	box-sizing: border-box;
 	background-color: #FDEAE0;
 }
-
-
+#option {display: none;}
+#option:checked ~ .opt--label label {
+	color: #ff6c57;
+	border: 1px solid #ff6c57;
+	background-color: white;
+}
+#option ~ .opt--label label {
+	color: #222;
+	border: 1px solid #ccc;
+	background-color: transparent;
+}
+.opt--title {
+	font-size: 15px;
+	font-weight: 500;
+	margin: 5px 0 12px 0;
+}
+.opt__seletors:first-child .opt--title {
+	margin-top: 0;
+}
+.opt--label {
+	display: flex;
+	gap: 10px;
+}
+.opt--label label {
+	display: inline-block;
+	font-size: 12px;
+	padding: 2px 7px 4px 7px;
+	border: 1px solid #ccc;
+	border-radius: 30px;
+	box-sizing: border-box;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
 
 .sub_items {
 	flex: 3;
-	height: 2400px;
 }
 .sub_items .items { /*맛 선택 시트*/
   overflow: visible;
+	height: 2400px;
 }
-
-
-
-
-
-/*-------------path---------------*/
-/*-------------path---------------*/
-/*-------------path---------------*/
-
-
-.box {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+.pagenation {
+	text-align: center;
 }
-.box::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera*/
+.pagenation span {
+	font-size: 13px;
+	padding: 2px 7px;
+	border: 1px solid white;
+	border-radius: 50%;
+	color: #777;
 }
-
+.pagenation span.page_active {
+	border: 1px solid #dfdfdf;
+	background-color: #dfdfdf;
+}
 
 
 

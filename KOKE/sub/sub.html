@@ -213,22 +213,109 @@
     </a></li>
   </ul><!--header_container-->
 
-  
-  
-
   <section class="middle_contants align_center">
     <div class="side_options">
       <div class="sub__title">
         <h2>모든 커피</h2>
         <div class="top_options">
-          <a href="#!">모든 브랜드</a>
-          <a href="#!">싱글오리진</a>
-          <a href="#!">블랜드</a>
+          <a href="#!" class="top--opt top--active">모든 브랜드</a>
+          <a href="#!" class="top--opt">싱글오리진</a>
+          <a href="#!" class="top--opt">블랜드</a>
         </div>
       </div>
-      <div class="side__option">
-        option
-      </div>
+      <ul class="side__option">
+        <input type="checkbox" id="option" name="side__opt">
+        <li class="opt__seletors">
+          <div class="opt--title">카페인 농도</div>
+          <div class="opt--label">
+            <label for="option">디카페인</label>
+            <label for="option">하프카페인</label>
+          </div>
+        </li>
+        <li class="opt__seletors">
+          <div class="opt--title">맛과 향</div>
+          <div class="opt--label">
+            <label for="option">달콤한</label>
+            <label for="option">쌉쌀한</label>
+            <label for="option">묵직한</label>
+            <label for="option">은은한</label>
+          </div>
+          <div class="opt--label">
+            <label for="option">편안한</label>
+            <label for="option">고소한</label>
+            <label for="option">상큼한</label>
+            <label for="option">산미있는</label>
+          </div>
+        </li>
+        <li class="opt__seletors">
+          <div class="opt--title">로스팅 포인트</div>
+          <div class="opt--label">
+            <label for="option">라이트</label>
+            <label for="option">라이트 미디엄</label>
+          </div>
+          <div class="opt--label">
+            <label for="option">미디엄</label>
+            <label for="option">미디엄 다크</label>
+          </div>
+        </li>
+        <li class="opt__seletors">
+          <div class="opt--title">원산지</div>
+          <div class="opt--label">
+            <label for="option">콜롬비아</label>
+            <label for="option">에티오피아</label>
+            <label for="option">과테말라</label>
+          </div>
+          <div class="opt--label">
+            <label for="option">브라질</label>
+            <label for="option">페루</label>
+            <label for="option">파나마</label>
+            <label for="option">코스타리카</label>
+          </div>
+          <div class="opt--label">
+            <label for="option">파퓨아뉴기니</label>
+            <label for="option">에콰도르</label>
+            <label for="option">인도네시아</label>
+          </div>
+          <div class="opt--label">
+            <label for="option">온두라스</label>
+            <label for="option">인도</label>
+            <label for="option">르완다</label>
+            <label for="option">니카라과</label>
+          </div>
+        </li>
+        <li class="opt__seletors">
+          <div class="opt--title">가공 방법</div>
+          <div class="opt--label">
+            <label for="option">허니</label>
+            <label for="option">내추럴</label>
+            <label for="option">펄프드 내추럴</label>
+          </div>
+          <div class="opt--label">
+            <label for="option">워시드</label>
+            <label for="option">무산소</label>
+            <label for="option">웻훌링</label>
+          </div>
+        </li>
+        <li class="opt__seletors">
+          <div class="opt--title">가격대</div>
+          <div class="opt--label">
+            <label for="option">1만원 이하</label>
+            <label for="option">2만원 이하</label>
+          </div>
+          <div class="opt--label">
+            <label for="option">3만원 이하</label>
+            <label for="option">4만원 이하</label>
+          </div>
+        </li>
+        <li class="opt__seletors">
+          <div class="opt--title">원두 특징</div>
+          <div class="opt--label">
+            <label for="option">유기농</label>
+            <label for="option">공정무역</label>
+            <label for="option">직접무역</label>
+          </div>
+        </li>
+      </ul>
     </div><!--side_options-->
 
     <div class="sub_items">
@@ -544,6 +631,11 @@
           </li><!--item03-->
         </ul><!--items-->
       </div>
+
+      <div class="pagenation">
+        <span class="page_active">1</span>
+        <span>2</span>
+      </div>
     </div><!--sub_items-->
   </section><!--middle_contants-->
 
@@ -554,146 +646,9 @@
 
 
 
-  <!-- <aside class="aside align_center">
-    <h3>커피 찾기</h3>
-    <ul>
-      <li>
-        <input type="checkbox" id="caffeine">
-        <label for="caffeine"><span>디카페인</span></label>
-      </li>
-      <li>맛과 향<span></span>
-        <ul>
-          <li>
-            <span>달콤</span>
-            <span>고소</span>
-            <span>상큼</span>
-            <span>쌉쌀</span>
-          </li>
-          <li>
-            <span>밸런스</span>
-            <span>깔끔한</span>
-            <span>부드러운</span>
-          </li>
-          <li>
-            <span>묵직한</span>
-            <span>과일</span>
-            <span>꽃향기</span>
-            <span>초콜릿</span>
-          </li>
-          <li>
-            <span>견과류</span>
-            <span>스모키</span>
-            <span>허브</span>
-            <span>시나몬</span>
-          </li>
-          <li>
-            <span>긴여운</span>
-            <span>풍부한</span>
-            <span>은은한</span>
-            <span>화사한</span>
-          </li>
-        </ul>
-      </li>
-      <li>맛과 향<span></span>
-        <ul>
-          <li>
-            <span>달콤</span>
-            <span>고소</span>
-            <span>상큼</span>
-            <span>쌉쌀</span>
-          </li>
-          <li>
-            <span>밸런스</span>
-            <span>깔끔한</span>
-            <span>부드러운</span>
-          </li>
-          <li>
-            <span>묵직한</span>
-            <span>과일</span>
-            <span>꽃향기</span>
-            <span>초콜릿</span>
-          </li>
-          <li>
-            <span>견과류</span>
-            <span>스모키</span>
-            <span>허브</span>
-            <span>시나몬</span>
-          </li>
-          <li>
-            <span>긴여운</span>
-            <span>풍부한</span>
-            <span>은은한</span>
-            <span>화사한</span>
-          </li>
-        </ul>
-      </li>
-      <li>맛과 향<span></span>
-        <ul>
-          <li>
-            <span>달콤</span>
-            <span>고소</span>
-            <span>상큼</span>
-            <span>쌉쌀</span>
-          </li>
-          <li>
-            <span>밸런스</span>
-            <span>깔끔한</span>
-            <span>부드러운</span>
-          </li>
-          <li>
-            <span>묵직한</span>
-            <span>과일</span>
-            <span>꽃향기</span>
-            <span>초콜릿</span>
-          </li>
-          <li>
-            <span>견과류</span>
-            <span>스모키</span>
-            <span>허브</span>
-            <span>시나몬</span>
-          </li>
-          <li>
-            <span>긴여운</span>
-            <span>풍부한</span>
-            <span>은은한</span>
-            <span>화사한</span>
-          </li>
-        </ul>
-      </li>
-      
-    </ul>
-  </aside> -->
 
-  <!-- <div class="box" style="width: 200px; height: 100px; background: #F78181; overflow-y: scroll;">
-    안녕하세요.<br>
-    스크롤바 숨기기.<br>
-    스크롤은 동작.<br>
-    Scrollbar hide.<br>
-    Scroll active.<br>
-    스크롤바 숨기기.<br>
-    스크롤은 동작.<br>
-    Scrollbar hide.<br>
-    Scroll active.<br>
-    안녕하세요.<br>
-    스크롤바 숨기기.<br>
-    스크롤은 동작.<br>
-    Scrollbar hide.<br>
-    Scroll active.<br>
-    스크롤바 숨기기.<br>
-    스크롤은 동작.<br>
-    Scrollbar hide.<br>
-    Scroll active.<br>
-    안녕하세요.<br>
-    스크롤바 숨기기.<br>
-    스크롤은 동작.<br>
-    Scrollbar hide.<br>
-    Scroll active.<br>
-    스크롤바 숨기기.<br>
-    스크롤은 동작.<br>
-    Scrollbar hide.<br>
-    Scroll active.<br>
-</div> -->
 
+ 
   
   <footer class="footer">
     <div class="cs_container">
