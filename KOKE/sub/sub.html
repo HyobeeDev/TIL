@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KOKE|취향의 원두를 언제 어디서나 즐겨보세요</title>
+  <title>KOKE|모든 커피</title>
 </head>
 <!-- swiper cdn -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
@@ -17,7 +17,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script defer src="../js/common.js"></script>
-<script defer src="../js/main.js"></script>
+<script defer src="./js/sub.js"></script>
 
 <!-- google font cdn -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,7 +70,7 @@
               <span>btn_line4</span>
             </div>
             <a href="#!" class="brand_search">브랜드 검색</a>
-            <a href="#!">모든 커피</a>
+            <a href="../sub/sub.html">모든 커피</a>
             <a href="#!">내 커피 취향테스트</a>
           </div><!--lnb_left-->
 
@@ -101,7 +101,7 @@
       <div class="lnb_menu_sheet">
         <div class="ham__menu">
           <ul class="align_center">
-            <li><a href="#!" class="depth1">모든 커피
+            <li><a href="./sub/sub.html" class="depth1">모든 커피
               <ul>
                 <li><a href="#!" class="depth2">브랜드</a></li>
                 <li><a href="#!" class="depth2">싱글오리진</a></li>
@@ -137,6 +137,10 @@
           </ul>
         </div><!--ham__menu-->
         <div class="brand__menu">
+          <form action=""  class="brand_search_bar align_center">
+            <input type="text" name="brand_search" class="brand--search" required>
+            <input type="submit" id="brand_submit" class="brand--icon">
+          </form>
           <ul class="index_text align_center">
             <li><a href="#!">ALL</a></li>
             <li><a href="#!">ㄱ</a></li>
@@ -209,7 +213,7 @@
       <span class="material-symbols-rounded">
         coffee
       </span>
-      모든커피
+      모든 커피
     </a></li>
   </ul><!--header_container-->
 
@@ -228,91 +232,91 @@
         <li class="opt__seletors">
           <div class="opt--title">카페인 농도</div>
           <div class="opt--label">
-            <label for="option">디카페인</label>
-            <label for="option">하프카페인</label>
+            <label for="option" class="option">디카페인</label>
+            <label for="option" class="option">하프카페인</label>
           </div>
         </li>
         <li class="opt__seletors">
           <div class="opt--title">맛과 향</div>
           <div class="opt--label">
-            <label for="option">달콤한</label>
-            <label for="option">쌉쌀한</label>
-            <label for="option">묵직한</label>
-            <label for="option">은은한</label>
+            <label for="option" class="option">달콤한</label>
+            <label for="option" class="option">쌉쌀한</label>
+            <label for="option" class="option">묵직한</label>
+            <label for="option" class="option">은은한</label>
           </div>
           <div class="opt--label">
-            <label for="option">편안한</label>
-            <label for="option">고소한</label>
-            <label for="option">상큼한</label>
-            <label for="option">산미있는</label>
+            <label for="option" class="option">편안한</label>
+            <label for="option" class="option">고소한</label>
+            <label for="option" class="option">상큼한</label>
+            <label for="option" class="option">산미있는</label>
           </div>
         </li>
         <li class="opt__seletors">
           <div class="opt--title">로스팅 포인트</div>
           <div class="opt--label">
-            <label for="option">라이트</label>
-            <label for="option">라이트 미디엄</label>
+            <label for="option" class="option">라이트</label>
+            <label for="option" class="option">라이트 미디엄</label>
           </div>
           <div class="opt--label">
-            <label for="option">미디엄</label>
-            <label for="option">미디엄 다크</label>
+            <label for="option" class="option">미디엄</label>
+            <label for="option" class="option">미디엄 다크</label>
           </div>
         </li>
         <li class="opt__seletors">
           <div class="opt--title">원산지</div>
           <div class="opt--label">
-            <label for="option">콜롬비아</label>
-            <label for="option">에티오피아</label>
-            <label for="option">과테말라</label>
+            <label for="option" class="option">콜롬비아</label>
+            <label for="option" class="option">에티오피아</label>
+            <label for="option" class="option">과테말라</label>
           </div>
           <div class="opt--label">
-            <label for="option">브라질</label>
-            <label for="option">페루</label>
-            <label for="option">파나마</label>
-            <label for="option">코스타리카</label>
+            <label for="option" class="option">브라질</label>
+            <label for="option" class="option">페루</label>
+            <label for="option" class="option">파나마</label>
+            <label for="option" class="option">코스타리카</label>
           </div>
           <div class="opt--label">
-            <label for="option">파퓨아뉴기니</label>
-            <label for="option">에콰도르</label>
-            <label for="option">인도네시아</label>
+            <label for="option" class="option">파퓨아뉴기니</label>
+            <label for="option" class="option">에콰도르</label>
+            <label for="option" class="option">인도네시아</label>
           </div>
           <div class="opt--label">
-            <label for="option">온두라스</label>
-            <label for="option">인도</label>
-            <label for="option">르완다</label>
-            <label for="option">니카라과</label>
+            <label for="option" class="option">온두라스</label>
+            <label for="option" class="option">인도</label>
+            <label for="option" class="option">르완다</label>
+            <label for="option" class="option">니카라과</label>
           </div>
         </li>
         <li class="opt__seletors">
           <div class="opt--title">가공 방법</div>
           <div class="opt--label">
-            <label for="option">허니</label>
-            <label for="option">내추럴</label>
-            <label for="option">펄프드 내추럴</label>
+            <label for="option" class="option">허니</label>
+            <label for="option" class="option">내추럴</label>
+            <label for="option" class="option">펄프드 내추럴</label>
           </div>
           <div class="opt--label">
-            <label for="option">워시드</label>
-            <label for="option">무산소</label>
-            <label for="option">웻훌링</label>
+            <label for="option" class="option">워시드</label>
+            <label for="option" class="option">무산소</label>
+            <label for="option" class="option">웻훌링</label>
           </div>
         </li>
         <li class="opt__seletors">
           <div class="opt--title">가격대</div>
           <div class="opt--label">
-            <label for="option">1만원 이하</label>
-            <label for="option">2만원 이하</label>
+            <label for="option" class="option">1만원 이하</label>
+            <label for="option" class="option">2만원 이하</label>
           </div>
           <div class="opt--label">
-            <label for="option">3만원 이하</label>
-            <label for="option">4만원 이하</label>
+            <label for="option" class="option">3만원 이하</label>
+            <label for="option" class="option">4만원 이하</label>
           </div>
         </li>
         <li class="opt__seletors">
           <div class="opt--title">원두 특징</div>
           <div class="opt--label">
-            <label for="option">유기농</label>
-            <label for="option">공정무역</label>
-            <label for="option">직접무역</label>
+            <label for="option" class="option">유기농</label>
+            <label for="option" class="option">공정무역</label>
+            <label for="option" class="option">직접무역</label>
           </div>
         </li>
       </ul>
@@ -323,8 +327,8 @@
         <ul>
           <li>
             <div class="img_container">
-              <a href="#!" class="item__img">
-                <img src="./imgs/new_01.jpg" alt="new_01">
+              <a href="../detail/detail.html" class="item__img">
+                <img src="./imgs/best_01.jpg" alt="best_01">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -332,13 +336,13 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_01.jpg" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[영앤도터스] 룰라바이</li>
-              <li>은은하고 편안함</li>
-              <li>18,000원</li>
+              <li>[콩볶는사람들] 스프링 블렌드</li>
+              <li>묵직/달콤한 여운</li>
+              <li>12,000원</li>
             </ul>
           </li><!--item01-->
           <li>
@@ -381,12 +385,12 @@
               <li>11,000원</li>
             </ul>
           </li><!--item03-->
-        </ul><!--items-->
+        </ul><!--items01-->
         <ul>
           <li>
             <div class="img_container">
               <a href="#!" class="item__img">
-                <img src="./imgs/new_01.jpg" alt="new_01">
+                <img src="./imgs/best02_1.png" alt="best_01">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -394,19 +398,19 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_05.png" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[영앤도터스] 룰라바이</li>
-              <li>은은하고 편안함</li>
-              <li>18,000원</li>
+              <li>[웨이브온 커피]디카페인 블렌드</li>
+              <li>달콤쌉싸름</li>
+              <li>15,000원</li>
             </ul>
           </li><!--item01-->
           <li>
             <div class="img_container">
               <a href="#!" class="item__img">
-                <img src="./imgs/new_02.jpg" alt="new_02">
+                <img src="./imgs/best02_2.png" alt="best_02">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -414,19 +418,19 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_06.jpg" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[영앤도터스] 파퓨아뉴기니 모리타</li>
-              <li>은은하고 편안함</li>
-              <li>17,000원</li>
+              <li>[프로토콜]브라질 캄포 알레그레</li>
+              <li>달콤쌉싸름</li>
+              <li>11,000원</li>
             </ul>
           </li><!--item02-->
           <li>
             <div class="img_container">
               <a href="#!" class="item__img">
-                <img src="./imgs/new_03.png" alt="new_03">
+                <img src="./imgs/best02_3.png" alt="best_03">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -434,21 +438,21 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_04.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_07.png" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[하늘에커피] 돌담 in 애월</li>
-              <li>고소함/구수함</li>
-              <li>11,000원</li>
+              <li>[릴리스커피] 비터스윗 라이트 에디션 2</li>
+              <li>달콤쌉싸름</li>
+              <li>13,000원</li>
             </ul>
           </li><!--item03-->
-        </ul><!--items-->
+        </ul><!--items02-->
         <ul>
           <li>
             <div class="img_container">
               <a href="#!" class="item__img">
-                <img src="./imgs/new_01.jpg" alt="new_01">
+                <img src="./imgs/best_01.jpg" alt="best_01">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -456,19 +460,19 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_11.png" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[영앤도터스] 룰라바이</li>
-              <li>은은하고 편안함</li>
-              <li>18,000원</li>
+              <li>[히떼커피]리볼브</li>
+              <li>묵직/달콤한 여운</li>
+              <li>12,000원</li>
             </ul>
           </li><!--item01-->
           <li>
             <div class="img_container">
               <a href="#!" class="item__img">
-                <img src="./imgs/new_02.jpg" alt="new_02">
+                <img src="./imgs/alexthecoffee_03.png" alt="best_02">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -476,19 +480,19 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_12.png" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[영앤도터스] 파퓨아뉴기니 모리타</li>
-              <li>은은하고 편안함</li>
-              <li>17,000원</li>
+              <li>[텍스트] 콜린</li>
+              <li>묵직/달콤한 여운</li>
+              <li>11,000원</li>
             </ul>
           </li><!--item02-->
           <li>
             <div class="img_container">
               <a href="#!" class="item__img">
-                <img src="./imgs/new_03.png" alt="new_03">
+                <img src="./imgs/55do_03.png" alt="best_03">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -496,21 +500,21 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_04.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_13.png" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[하늘에커피] 돌담 in 애월</li>
-              <li>고소함/구수함</li>
-              <li>11,000원</li>
+              <li>[고래커피] 그라운드 필 라이트</li>
+              <li>묵직/달콤한 여운</li>
+              <li>13,000원</li>
             </ul>
           </li><!--item03-->
-        </ul><!--items-->
+        </ul><!--items03-->
         <ul>
           <li>
             <div class="img_container">
               <a href="#!" class="item__img">
-                <img src="./imgs/new_01.jpg" alt="new_01">
+                <img src="./imgs/alexthecoffee_04.png" alt="best_01">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -518,19 +522,19 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_13.png" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[영앤도터스] 룰라바이</li>
+              <li>[고래커피] 리들리</li>
               <li>은은하고 편안함</li>
-              <li>18,000원</li>
+              <li>19,000원</li>
             </ul>
           </li><!--item01-->
           <li>
             <div class="img_container">
               <a href="#!" class="item__img">
-                <img src="./imgs/new_02.jpg" alt="new_02">
+                <img src="./imgs/best_02.jpg" alt="best_02">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -538,19 +542,19 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_02.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_14.png" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[영앤도터스] 파퓨아뉴기니 모리타</li>
+              <li>[피어커피] 시그니처 벨런스</li>
               <li>은은하고 편안함</li>
-              <li>17,000원</li>
+              <li>11,000원</li>
             </ul>
           </li><!--item02-->
           <li>
             <div class="img_container">
               <a href="#!" class="item__img">
-                <img src="./imgs/new_03.png" alt="new_03">
+                <img src="./imgs/felt_01.png" alt="best_03">
               </a>
               <ul class="img__tools">
                 <li><a href="#!"><img src="./imgs/tool_preview.png" alt="미리보기"></a></li>
@@ -558,13 +562,13 @@
                 <li><a href="#!"><img src="./imgs/tool_cart.png" alt="장바구니에 넣기"></a></li>
               </ul>
               <div class="roastery__logo">
-                <img src="./imgs/roastery_logo_04.png" alt="roastery_logo">
+                <img src="./imgs/roastery_logo_15.png" alt="roastery_logo">
               </div>
             </div>
             <ul class="text_container">
-              <li>[하늘에커피] 돌담 in 애월</li>
-              <li>고소함/구수함</li>
-              <li>11,000원</li>
+              <li>[채움커피] 행복한 한 때</li>
+              <li>은은하고 편안함</li>
+              <li>17,000원</li>
             </ul>
           </li><!--item03-->
         </ul><!--items-->
@@ -638,17 +642,6 @@
       </div>
     </div><!--sub_items-->
   </section><!--middle_contants-->
-
-  
-
-
-
-
-
-
-
-
- 
   
   <footer class="footer">
     <div class="cs_container">

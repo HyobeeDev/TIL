@@ -31,8 +31,10 @@
 /*-------------path---------------*/
 .path {
 	position: sticky;
-	padding: 20px 0 40px;
+	padding: 20px 0;
 	top: 60px;
+	background-color: white;
+	z-index: 10;
 }
 .path li {display: inline-block;}
 .path li a {font-size: 13px; color: #777;}
@@ -66,12 +68,12 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 10px;
-	margin: 20px 0;
+	margin: 15px 0;
 }
 .sub__title .top_options a {
   display: block;
-	padding: 5px 10px;
-	font-size: 15px;
+	padding: 5px 15px;
+	font-size: 13px;
 	border: 1px solid #dfdfdf;
 	border-radius: 20px;
 	box-sizing: border-box;
@@ -86,7 +88,7 @@
 	padding: 20px;
 	border-radius: 20px;
 	box-sizing: border-box;
-	background-color: #FDEAE0;
+	background-color: #faf7e8;
 }
 #option {display: none;}
 #option:checked ~ .opt--label label {
@@ -99,10 +101,12 @@
 	border: 1px solid #ccc;
 	background-color: transparent;
 }
+.side__option .opt--title:first-child {
+	margin-top: 0;
+}
 .opt--title {
 	font-size: 15px;
-	font-weight: 500;
-	margin: 5px 0 12px 0;
+	margin: 20px 0 8px 0;
 }
 .opt__seletors:first-child .opt--title {
 	margin-top: 0;
@@ -114,8 +118,9 @@
 .opt--label label {
 	display: inline-block;
 	font-size: 12px;
+	color: #777;
 	padding: 2px 7px 4px 7px;
-	border: 1px solid #ccc;
+	border: 1px solid white;
 	border-radius: 30px;
 	box-sizing: border-box;
 	margin-bottom: 5px;
