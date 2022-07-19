@@ -38,48 +38,33 @@
   width: 100%;
   height: 900px;
   background: url('../imgs/main_visual_bg.jpg') no-repeat center center/cover;
-  transform: translateY(-116px);
-}
-.main_visual>div:first-child {
-  width: 100%;
-  height: 900px;
+  transform: translateY(-70px);
   overflow: hidden;
 }
-.main_visual>div:first-child img {
+.main_visual_bg {
+  position: relative;
+  top: 0; left: 0;
+}
+.main_visual_bg img {
   display: block;
   width: auto;
   height: 100%;
 }
-.main_visual_Swiper {
+.swiper_container {
   position: absolute;
-  top: 260px; left: 50%;
-  /* transform: translate(-50%, -50%); */
-  transform: translateX(-50%);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
   text-align: center;
 }
-.main_visual_Swiper .swiper-slide {
-  height: 500px;
-  padding-top: 70px;
-  box-sizing: border-box;
-}
-.main_visual_Swiper h2 {
+.swiper_container h2 {
   font-size: 39px;
+  margin-bottom: 20px;
 }
-.main_visual_Swiper p {
+.swiper_container p {
   font-size: 19px;
-  margin: 30px 0 60px 0;
 }
-.main_visual_Swiper .swiper-button-prev {
-  top: 12px;
-  left: 50%;
-  transform: translateX(-50%) rotate(90deg);
-  color: #bbb;
-}
-.main_visual_Swiper .swiper-button-next {
-  top: 460px;
-  right: 50%;
-  transform: translateX(50%) rotate(90deg);
-}
+.swiper-button-next, .swiper-button-prev {color: #ccc;}
 
 .main_visual .emphasis--btn {
   position: absolute;
@@ -132,7 +117,7 @@
 
 /*-------------best---------------*/
 .best {
-  padding: 140px 0 70px 0;
+  padding: 200px 0 70px 0;
   box-sizing: border-box;
 }
 
@@ -161,94 +146,14 @@
 .teb__labels li:first-child {
   margin-left: 0;
 }
-
-.items {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-.items li {
-  flex: 1;
-}
-.img_container {
-  position: relative;
-  height: 280px;
-  overflow: hidden;
-}
-.item__img {
-  width: 100%;
-  height: 280px;
-  overflow: hidden;
-}
-.item__img img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: all .3s ease;
-}
-
-.img__tools {
-  position: absolute;
-  bottom: 0; right: 0;
-  height: 0;
-  opacity: 0;
-  transition: all .3s ease;
-}
-.img__tools li a {
-  display: block;
-  width: 34px;
-  height: 34px;
-  background-color: #999;
-  margin-top: 7px;
-  border-radius: 50%;
-  padding: 6px;
-  box-sizing: border-box;
-  transition: all .3s ease;
-}
-.img__tools li a img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.img__tools li:hover a {
-  background-color: #222;
-}
-
-.img_container:hover .item__img img {
-  transform: scale(115%);
-}
-.img_container:hover .img__tools {
-  height: 123px;
-  opacity: 1;
-}
-
-
-.roastery__logo {
-  position: absolute;
-  top: 0; left: 0;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.roastery__logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.text_container {
-  text-align: center;
-  margin: 40px 0 80px 0;
-}
-.text_container li:nth-child(2) {
-  font-size: 15px;
+.teb__labels li a {
   color: #999;
-  margin-bottom: 10px;
+  font-weight: 500;
+  transition: all .3s ease;
 }
-.text_container li:nth-child(3) {
-  font-size: 16px;
-  font-weight: 700;
+.teb__labels li a.best_teb_active {
+  color: #222;
+  border-bottom: 2px solid #222;
 }
 
 .more--btn { /*섹션더보기버튼(공통적용)*/
@@ -274,7 +179,7 @@
 
 /*-------------new---------------*/
 .new {
-  padding: 70px 0;
+  padding: 140px 0 70px 0;
   box-sizing: border-box;
 }
 
@@ -311,7 +216,7 @@
 
 
 /*-------------hot---------------*/
-.hot {padding-top: 30px;}
+.hot {padding-top: 140px;}
 .hot__title {
   margin: 0 0 60px 0;
   text-align: center;
@@ -333,6 +238,33 @@
   font-size: 19px;
 }
 
+#hot_shop01, #hot_shop02, #hot_shop03, #hot_shop04, #hot_shop05, #hot_shop06 {display: none;}
+#hot_shop01:checked ~ .roasterys__logos .hot_logo01,
+#hot_shop02:checked ~ .roasterys__logos .hot_logo02,
+#hot_shop03:checked ~ .roasterys__logos .hot_logo03,
+#hot_shop04:checked ~ .roasterys__logos .hot_logo04,
+#hot_shop05:checked ~ .roasterys__logos .hot_logo05,
+#hot_shop06:checked ~ .roasterys__logos .hot_logo06 {
+  border: 2px solid #ff6c57;
+}
+#hot_shop01:checked ~ .products01,
+#hot_shop02:checked ~ .products02,
+#hot_shop03:checked ~ .products03,
+#hot_shop04:checked ~ .products04,
+#hot_shop05:checked ~ .products05,
+#hot_shop06:checked ~ .products06 {
+  display: block;
+}
+#hot_shop01 ~ .products01,
+#hot_shop02 ~ .products02,
+#hot_shop03 ~ .products03,
+#hot_shop04 ~ .products04,
+#hot_shop05 ~ .products05,
+#hot_shop06 ~ .products06 {
+  display: none;
+}
+
+
 .hot_roasterys {
   display: flex;
   justify-content: space-between;
@@ -349,7 +281,7 @@
 .roasterys__logos>li:last-child {
   margin-bottom: 0;
 }
-.roasterys__logos>li div {
+.roasterys__logos>li label {
   width: 110px;
   height: 110px;
   border: 2px solid #dfdfdf;
@@ -359,10 +291,10 @@
   cursor: pointer;
   transition: all .3s ease;
 }
-.roasterys__logos>li div:hover {
+.roasterys__logos>li label:hover {
   border: 2px solid #ff6c57;
 }
-.roasterys__logos>li div img {
+.roasterys__logos>li label img {
   display: block;
   width: 100%;
   height: auto;
@@ -370,6 +302,7 @@
 
 .roastery__products {
   flex: 1;
+  height: 560px;
   overflow: hidden;
 }
 .hot_swiper_detail {
@@ -493,23 +426,27 @@
   margin-left: 5px;
   color: #555;
 }
-.hot_swiper_thumbs {}
+.hot_swiper_thumbs {
+  margin-top: 30px;
+}
 .hot_swiper_thumbs .swiper-slide {
-  width: 168px;
   cursor: pointer;
 }
 .hot_thumb_img {
-  width: 168px;
-  height: 168px;
+  width: 100px;
+  height: 130px;
+  margin-left: 10px;
 }
 .hot_thumb_img img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 .hot_thumb_name {
   font-size: 13px;
   text-align: center;
 }
+.roastery__products .swiper-button-prev {color: #ccc;}
+.roastery__products .swiper-button-next {color: #ccc;}
 
 .all__roasterys {
   display: flex;
@@ -557,6 +494,8 @@
 .all__roasterys .swiper-button-prev:active,
 .all__roasterys .swiper-button-next:active {color: #666;}
 
+.products02, .products03, .products04,
+.products05, .products06 {display: none;}
 
 /*-------------main_video---------------*/
 .main_video {
@@ -609,7 +548,7 @@
 
 
 /*-------------review---------------*/
-.review {padding: 70px 0;}
+.review {padding: 140px 0 20px 0;}
 
 .review__img {
   height: 282px;
