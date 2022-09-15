@@ -6,7 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>김민태의 프론트엔드 아카데미</title>
 </head>
+<style>
+  * {margin: 0; padding: 0; outline: none; list-style: none; font-size: 18px;}
+  .header {background-color: rgba(0, 0, 0, 1); height: 60px; line-height: 60px;}
+  h1 {text-align: center; color: #fff; font-size: 28px;}
+  h2 {font-size: 24px; padding: 30px 0;}
+  h3 {font-size: 22px;}
+  h4 {font-size: 20px;}
+  .part {padding: 0 30px;}
+  .chapter {padding: 30px 0; border-top: 1px solid #dfdfdf;}
+  .depth1-component {margin-bottom: 30px;}
+  .depth2 li {margin-bottom: 10px;}
+  
+  h4 {margin: 10px 0;}
+</style>
 <body>
+  <header class="header">
+    <h1>김민태의 프론트엔드 아카데미</h1>
+    <nav class="gnb">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </header>
   <div class="part">
     <h2>제 1강. JavaScript & TypeScript Essential</h2>
     <!-- chapter01 start -->
@@ -67,19 +91,6 @@
         <li class="depth1-component">
           <h4>모던 JavaScript와 개발 환경.</h4>
           <ul class="depth2">
-            <li>웹앱을 실행시키는 역할을 하는 것이 브라우저. 브라우저가 실행되는 시간을 런타임이라고 하고 브라우저를 런타임 환경을 제공하는 환경이라고 이야기한다. 웹앱에게 런타임 환경을 제공하는 것은 브라우저가 될 수 있다.</li>
-            <li>예전에는 브라우저만 런타임 환경을 제공했지만, node.js가 등장해서 브라우저가 아니어도 JavaScript를 실행시킬 수 있는 환경이 다수 만들어짐.</li>
-            <li>웹서버라는 소프트웨어가 HTML 파일을 브라우저한테 전송 - 브라우저가 HTML을 해석해서 화면에 UI를 그림 - JavaScript 실행. JavaScript도 HTML을 조작할 수 있기 때문에 브라우저가 웹앱을 실행시킨 다음에도 UI가 Javascript에 의해 조작되는 경우도 있다.</li>
-            <li>클라이언트 사이드 렌더링 : 실제로 브라우저에 최초 전송된 HTML에는 거의 내용이 없고, JavaScript가 실행되면서 필요한 UI를 그때그때마다 생성해 내는 방식</li>
-            <li>서버 사이드 렌더링: 웹서버에서 HTML이 만들어져서 브라우저로 전송되는 방식</li>
-            <li>웹앱에서는 HTML과 CSS로 그래픽 시스템을 표현할 수 있고, JavaScript로는 캔버스라는 태그로 2D, 3D 등의 그래픽을 표현할 수 있다. JavaScript로 그래픽을 표현할 수 있도록 만들어진 도구들을 API라고 함.</li>
-            <li>그 외에도 미디어 파일을 다루거나 웹 워커, 웹 어셈블리 등 다양한 스펙들이 존재한다.</li>
-            <li></li>
-          </ul>
-        </li><!--unit fin-->
-        <li class="depth1-component">
-          <h4>모던 JavaScript와 개발 환경.</h4>
-          <ul class="depth2">
             <li>ES2015부터 모던 JavaScript, 현대적인 자바스크립트라고 함.</li>
             <li>현대 프론트엔드 영역이 이렇게 복잡해진 가장 핵심적인 이유: 웹앱의 규모가 굉장히 커지고 복잡해졌다.</li>
             <li>자바스크립트는 애초에 HTML의 간단한 조작을 위해 만들어진 언어였다. 하나의 언어로 수만 개의 파일을 조작하려면 모듈이라는 스펙이 필요한데 JavaScript는 이 모듈이라는 게 없었다가 ES2015부터 지원하기 시작했다.</li>
@@ -112,6 +123,12 @@
             <li>
               이처럼 번들링, 트랜스 파일링이라는 기능으로 변환을 할 수 있게 되면서 JavaScript의 한계를 JavaScript 뿐만 아니라 여러가지 아이디어들로 뛰어넘어 활용할 수 있게 되었다.
             </li>
+          </ul>
+        </li><!--unit fin-->
+        <li class="depth1-component">
+          <h4>TypeScript vs JavaScript</h4>
+          <ul class="depth2">
+            <li></li>
           </ul>
         </li><!--unit fin-->
         <li class="depth1-component">
