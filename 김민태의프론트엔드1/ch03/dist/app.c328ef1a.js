@@ -120,14 +120,22 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"app.js":[function(require,module,exports) {
 var ajax = new XMLHttpRequest();
 var NEWS_URL = 'https://api.hnpwa.com/v0/news/1.json';
+var CONTENT_URL = 'https://api.hnpwa.com/v0/item/@id.json';
 ajax.open('GET', NEWS_URL, false);
 ajax.send();
 var newsFeed = JSON.parse(ajax.response);
 var ul = document.createElement('ul');
+window.addEventListener('hashchange', function () {
+  console.log('ㅎㅐ시가 변경됨');
+});
 
 for (var i = 0; i < 10; i++) {
   var li = document.createElement('li');
-  li.innerHTML = newsFeed[i].title;
+  var a = document.createElement('a');
+  a.href = 'a';
+  a.innerHTML = "".concat(newsFeed[i].title, " (").concat(newsFeed[i].comments_count, ")");
+  a.addEventListener('click', function () {});
+  li.appendChild(a);
   ul.appendChild(li);
 }
 
@@ -160,7 +168,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52696" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50836" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
