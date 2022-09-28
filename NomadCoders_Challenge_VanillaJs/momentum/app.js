@@ -67,26 +67,62 @@ player.sayHello("Hyobee");
 player.sayHello("효비");
 */
 
+
+
 // 숙제! 계산기 만들기
+// const calculator = {
+//   add: function(a, b) {
+//     console.log(a + b);
+//   },
+//   minus: function(a, b) {
+//     console.log(a - b);
+//   },
+//   div: function(a, b) {
+//     console.log(a / b);
+//   },
+//   multi: function(a, b) {
+//     console.log(a * b);
+//   },
+//   powerof: function(a, b) {
+//     console.log(a ** b);
+//   },
+// };
+// calculator.add(5, 1);
+// calculator.minus(5, 1);
+// calculator.div(10, 2);
+// calculator.multi(5, 2);
+// calculator.powerof(2, 2);
+
+
+// const age = 96;
+// function calculateKrAge(ageOfForeigner){
+//   return ageOfForeigner + 2;
+// }
+
+// const krAge = calculateKrAge(age);
+// console.log(krAge);
+
+
 const calculator = {
   add: function(a, b) {
-    console.log(a + b);
+    return a + b;
   },
   minus: function(a, b) {
-    console.log(a - b);
+    return a - b;
   },
   div: function(a, b) {
-    console.log(a / b);
+    return a / b;
   },
   multi: function(a, b) {
-    console.log(a * b);
+    return a * b;
   },
   powerof: function(a, b) {
-    console.log(a ** b);
+    return a ** b;
   },
 };
-calculator.add(5, 1);
-calculator.minus(5, 1);
-calculator.div(10, 2);
-calculator.multi(5, 2);
-calculator.powerof(2, 2);
+
+const plusResult = calculator.add(2, 3);
+const minusResult = calculator.minus(plusResult, 10);
+const multiResult = calculator.multi(10, minusResult);
+const divideResult = calculator.div(multiResult, plusResult);
+const powerResult = calculator.powerof(divideResult, minusResult);
