@@ -52,7 +52,7 @@ plus(8, 60);
 divide(60, 8);
 */
 
-
+/*
 // console.log()처럼 Object 형식으로 만들어보자.
 const player = {
   name: "Hyobee",
@@ -65,3 +65,28 @@ const player = {
 player.sayHello("lynn");
 player.sayHello("Hyobee");
 player.sayHello("효비");
+*/
+
+// 숙제! 계산기 만들기
+const calculator = {
+  add: function(a, b) {
+    console.log(a + b);
+  },
+  minus: function(a, b) {
+    console.log(a - b);
+  },
+  div: function(a, b) {
+    console.log(a / b);
+  },
+  multi: function(a, b) {
+    console.log(a * b);
+  },
+  powerof: function(a, b) {
+    console.log(a ** b);
+  },
+};
+calculator.add(5, 1);
+calculator.minus(5, 1);
+calculator.div(10, 2);
+calculator.multi(5, 2);
+calculator.powerof(2, 2);
