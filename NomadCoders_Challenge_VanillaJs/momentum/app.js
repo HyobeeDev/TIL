@@ -26,3 +26,42 @@ sayHello ("lynn", 13);
 sayHello ("hyobee", 22);
 */
 
+
+
+/*
+// error 예시 01. undefined undefined : 실행버튼에 데이터를 넣지 않았기 때문.
+// function plus(a, b) {
+//   console.log(a, b);
+// }
+// plus();
+
+// error 예시 02. NaN(Not a Number) :  숫자가 아님.
+// function plus(a, b) {
+//   console.log(a + b);
+// }
+// plus();
+
+// 받는 데이터 이름은 뭐든 상관없지만, 순서는 매우 중요하다!
+function plus(firstNumber, secondNumber) {
+  console.log(firstNumber + secondNumber);
+}
+function divide(a, b) {
+  console.log(a/b);
+}
+plus(8, 60);
+divide(60, 8);
+*/
+
+
+// console.log()처럼 Object 형식으로 만들어보자.
+const player = {
+  name: "Hyobee",
+  sayHello: function(otherPersonsName){ // 데이터 받기
+    console.log("Hello! " + otherPersonsName + ". Nice to meet you!");
+  }
+};
+
+// 데이터 보내기
+player.sayHello("lynn");
+player.sayHello("Hyobee");
+player.sayHello("효비");
