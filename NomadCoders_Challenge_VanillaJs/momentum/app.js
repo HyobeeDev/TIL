@@ -164,9 +164,28 @@ if(isNaN(age) || age < 0) {
 // }
 */
 
-const title = document.getElementById("ItsTitle");
+// 1.
+const title = document.querySelector(".hello h1");
+// const title = document.querySelectorAll(".hello h1");
+// console.dir(title);
+// title.innerText = "Hello!!!";
+// title.style.color = "red";
 
-title.innerText = "Got you!";
+// 3.
+function handleTitleClick(){
+  // console.log("title was clicked!")
+  title.style.color = "blue";
+}
 
-console.log(title.id);
-console.log(title.className);
+// 2. 
+title.addEventListener("click", handleTitleClick);
+
+// 4.
+// handleTitleClick();
+
+/**
+ * 1. 이벤트 대상인 title을 선언한다.
+ * 2. title에게 감지해야 할 이벤트를 정해주기 위해, 괄호 안에 어떤 상태일 때 어떤 함수를 실행할지를 정한다.
+ * 3. 실행을 반복할 함수 코드를 만들어 준다.
+ * 4. 내가 직접 실행버튼을 누르지 않고, JavaScript에 이 function이름을 넘겨줘서 유저가 title을 click할 경우에 JavaScript가 실행버튼을 대신 눌러주게끔 하는 것이다.
+ */
