@@ -176,16 +176,23 @@ function handleTitleClick(){
   // console.log("title was clicked!")
   title.style.color = "blue";
 }
+function handleMouseEnter(){
+  // console.log("mouse is here!");
+  title.innerText = "Mouse is here!";
+}
+function handleMouseLeave(){
+  title.innerText = "Mouse is gone!";
+}
 
 // 2. 
 title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
 
-// 4.
-// handleTitleClick();
 
 /**
  * 1. 이벤트 대상인 title을 선언한다.
  * 2. title에게 감지해야 할 이벤트를 정해주기 위해, 괄호 안에 어떤 상태일 때 어떤 함수를 실행할지를 정한다.
  * 3. 실행을 반복할 함수 코드를 만들어 준다.
- * 4. 내가 직접 실행버튼을 누르지 않고, JavaScript에 이 function이름을 넘겨줘서 유저가 title을 click할 경우에 JavaScript가 실행버튼을 대신 눌러주게끔 하는 것이다.
+ * => 내가 직접 실행버튼을 누르지 않고, JavaScript에 이 function이름을 넘겨줘서 유저가 title을 click할 경우에 JavaScript가 실행버튼을 대신 눌러주게끔 하는 것이다.
  */
