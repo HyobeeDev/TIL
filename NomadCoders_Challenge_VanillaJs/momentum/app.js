@@ -142,7 +142,7 @@ true && false === false
 false && false === false
 */
 
-
+/*
 const age = parseInt(prompt("How old are you?")); 
 
 console.log();
@@ -159,6 +159,14 @@ if(isNaN(age) || age < 0) {
   console.log("You can do whatever you want.");
 }
 
-if((a && b) || (c && d) || (x || w)) {
-  // true || false || false => true
-}
+// if((a && b) || (c && d) || (x || w)) {
+//   // true || false || false => true
+// }
+*/
+
+const title = document.getElementById("ItsTitle");
+
+title.innerText = "Got you!";
+
+console.log(title.id);
+console.log(title.className);
