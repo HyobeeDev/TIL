@@ -165,30 +165,45 @@ if(isNaN(age) || age < 0) {
 */
 
 // 1.
-const title = document.querySelector(".hello h1");
-// const title = document.querySelectorAll(".hello h1");
-// console.dir(title);
-// title.innerText = "Hello!!!";
-// title.style.color = "red";
+const h1 = document.querySelector(".hello h1");
+// const h1 = document.querySelectorAll(".hello h1");
+// console.dir(h1);
+// h1.innerText = "Hello!!!";
+// h1.style.color = "red";
 
 // 3.
 function handleTitleClick(){
   // console.log("title was clicked!")
-  title.style.color = "blue";
+  h1.style.color = "blue";
 }
 function handleMouseEnter(){
   // console.log("mouse is here!");
-  title.innerText = "Mouse is here!";
+  h1.innerText = "Mouse is here!";
 }
 function handleMouseLeave(){
-  title.innerText = "Mouse is gone!";
+  h1.innerText = "Mouse is gone!";
+}
+
+function handleWindowResize(){
+  document.body.style.backgroundColor = "tomato";
+}
+function handleWindowCopy(){
+  alert("It was copied!")
+}
+function handleWindowOffline(){
+  alert("SOS! No WIFI!")
+}
+function handleWindowOnline(){
+  alert("All Goooooood!")
 }
 
 // 2. 
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
-
+// h1.addEventListener("click", handleTitleClick);
+h1.onclick = handleTitleClick;
+// h1.addEventListener("mouseenter", handleMouseEnter);
+h1.onmouseenter = handleMouseEnter;
+// h1.addEventListener("mouseleave", handleMouseLeave);
+h1.onmouseleave = handleMouseLeave;
 
 /**
  * 1. 이벤트 대상인 title을 선언한다.
@@ -196,3 +211,8 @@ title.addEventListener("mouseleave", handleMouseLeave);
  * 3. 실행을 반복할 함수 코드를 만들어 준다.
  * => 내가 직접 실행버튼을 누르지 않고, JavaScript에 이 function이름을 넘겨줘서 유저가 title을 click할 경우에 JavaScript가 실행버튼을 대신 눌러주게끔 하는 것이다.
  */
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
