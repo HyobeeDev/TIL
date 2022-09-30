@@ -263,13 +263,13 @@ window.addEventListener(
   superEventHandler.handleWindowContextmenu
 );
 */
-
+/*
 const h1 = document.querySelector(".hello h1");
 function handleTitleClick(){
-  // console.log(h1.style.color);
+  // console.log(h1.style.color); // h1은 여기서 setter 역할
   // h1.style.color = "blue"
-  // console.log(h1.style.color);
-  // 위의 세줄 코드를 통해 콘솔에서 현재 컬러값을 알아낼 수 있음을 확인.
+  // console.log(h1.style.color); // h1은 여기서 getter 역할
+  // 위의 세줄 코드를 통해 h1이 setter, getter 역할을 모두 한다는 것과 콘솔에서 현재 컬러값을 알아낼 수 있음을 확인.
   
   // 현재 컬러값이 OO이라면 XX로 바꿔주기 => if문
   // 1. 직관적인 if문
@@ -289,4 +289,29 @@ function handleTitleClick(){
   }
   h1.style.color = newColor;
 }
+h1.addEventListener("click", handleTitleClick);
+
+// 1. find the element 엘리먼트를 찾아라
+// 2. Listen for an event 이벤트를 감지해라
+// 3. React to that event 그 이벤트에 반응해라
+ */
+
+
+
+const h1 = document.querySelector(".hello h1");
+
+function handleTitleClick(){
+  const clickedClass = "clicked";
+  // if(h1.className === clickedClass){
+  //   h1.className = "";
+  // } else {
+  //   h1.className = clickedClass;
+  // }
+  if(h1.classList.contains(clickedClass)){
+    h1.classList.remove(clickedClass);
+  } else {
+    h1.classList.add(clickedClass);
+  }
+}
+
 h1.addEventListener("click", handleTitleClick);
