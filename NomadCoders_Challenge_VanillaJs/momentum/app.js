@@ -301,17 +301,23 @@ h1.addEventListener("click", handleTitleClick);
 const h1 = document.querySelector(".hello h1");
 
 function handleTitleClick(){
-  const clickedClass = "clicked";
+  // const clickedClass = "clicked";
   // if(h1.className === clickedClass){
   //   h1.className = "";
   // } else {
   //   h1.className = clickedClass;
   // }
-  if(h1.classList.contains(clickedClass)){
-    h1.classList.remove(clickedClass);
-  } else {
-    h1.classList.add(clickedClass);
-  }
+
+  // 클래스명 개별적으로 사용하기 위해 classList 사용
+  // const clickedClass = "clicked";
+  // if(h1.classList.contains(clickedClass)){
+  //   h1.classList.remove(clickedClass);
+  // } else {
+  //   h1.classList.add(clickedClass);
+  // }
+
+  // 위의 다섯줄을 toggle로 대체하기
+  h1.classList.toggle("clicked");
 }
 
 h1.addEventListener("click", handleTitleClick);
