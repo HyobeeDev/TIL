@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>chapter4-login</title>
+</head>
+<body>
+  <form id="login-form">
+    <!-- form 안에 input이 있어야 required, maxlength 등의 유효성 체크가 가능하다. -->
+    <!-- form 안에서 엔터를 누르거나 버튼을 클릭했을 때 input이 더 없으면 자동으로 submit 된다. 그래서 click에는 관심가질 필요가 없음.-->
+    <input 
+      required
+      maxlength="15" 
+      type="text" 
+      placeholder="What is your name?" 
+    />
+    <button>Log In</button>
+  </form>
+  <script src="./index.js"></script>
+</body>
+</html>
