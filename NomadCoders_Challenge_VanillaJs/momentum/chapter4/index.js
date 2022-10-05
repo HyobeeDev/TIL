@@ -34,6 +34,8 @@ loginButton.addEventListener("click", handleLoginBtnClick);
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 
+const link = document.querySelector("a");
+
 function onLoginSubmit(event){
   // console.username = loginInput.ariaValueMax;
   // console.log("username");
@@ -43,6 +45,12 @@ function onLoginSubmit(event){
   console.log(loginInput.value);
 }
 
+function handleLinkClick(event){
+  event.preventDefault();
+  // console.dir(event);
+}
+
 loginForm.addEventListener("submit", onLoginSubmit);
 // 변수명 뒤에 오는 ()괄호는 '당장 실행'하라는 명령어와 같다.
 // 그래서 addEventListener를 쓸 때, onLoginSubmit()에서 괄호를 쓰지 않는 이유는 당장 실행할 것이 아니기 때문이다.
+link.addEventListener("click", handleLinkClick);
