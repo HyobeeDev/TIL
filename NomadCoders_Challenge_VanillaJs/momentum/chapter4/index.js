@@ -29,7 +29,7 @@ function handleLoginBtnClick(){
 loginButton.addEventListener("click", handleLoginBtnClick);
 */
 
-
+/*
 // 브라우저가 새로고침하지 않고 user 정보를 저장하도록 하려면?
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
@@ -54,3 +54,22 @@ loginForm.addEventListener("submit", onLoginSubmit);
 // 변수명 뒤에 오는 ()괄호는 '당장 실행'하라는 명령어와 같다.
 // 그래서 addEventListener를 쓸 때, onLoginSubmit()에서 괄호를 쓰지 않는 이유는 당장 실행할 것이 아니기 때문이다.
 link.addEventListener("click", handleLinkClick);
+*/
+
+
+const loginForm = document.querySelector("#login-form");
+const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
+
+const HIDDEN_CLASSNAME = "hidden";
+
+function onLoginSubmit(event){
+  event.preventDefault();
+  loginForm.classList.add("hidden");
+  const username = loginInput.value;
+  // console.log(username);
+  greeting.innerText = `Hello! ${username}!`;
+  greeting.classList.remove(HIDDEN_CLASSNAME);
+}
+
+loginForm.addEventListener("submit", onLoginSubmit);
