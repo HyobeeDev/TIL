@@ -62,14 +62,37 @@ const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
+const USERNAME_KEY = "username";
 
 function onLoginSubmit(event){
   event.preventDefault();
-  loginForm.classList.add("hidden");
+  loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
   // console.log(username);
+  localStorage.setItem(USERNAME_KEY, username);
   greeting.innerText = `Hello! ${username}!`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-loginForm.addEventListener("submit", onLoginSubmit);
+
+// localStorage: 브라우저에 뭔가를 저장할 수 있게 해줌. 그래서 나중에 가져다 쓸 수 있다.
+// localStorage.setItem("key", "value")
+// localStorage.getItem("key")
+// localStorage.removeItem("key")
+
+function paintGreetings(username){
+  // greeting.innerText = `Hello ${username}`;
+  // greeting.classList.remove(HIDDEN_CLASSNAME);
+  paintGreetings(username)
+}
+
+const savedUsername = localStorage.getItem(USERNAME_KEY);
+
+if(savedUsername === null) {
+  loginForm.classList.remove(HIDDEN_CLASSNAME);
+  loginForm.addEventListener("submit", onLoginSubmit);
+} else {
+  // greeting.innerText = `Hello ${savedUsername}`;
+  // greeting.classList.remove(HIDDEN_CLASSNAME);
+  paintGreetings(username)
+}
