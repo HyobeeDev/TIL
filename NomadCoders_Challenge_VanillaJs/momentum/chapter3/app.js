@@ -1,55 +1,63 @@
 /*
-// 1.
-const h1 = document.querySelector(".hello h1");
-// const h1 = document.querySelectorAll(".hello h1");
-console.dir(h1);
-// h1.innerText = "Hello!!!";
-// h1.style.color = "red";
+// 브라우저가 app.js를 읽고 있기 때문에 document 객체를 실행할 수 있다.
 
-// 3.
-function handleTitleClick(){
-  // console.log("title was clicked!")
-  h1.style.color = "blue";
-}
-function handleMouseEnter(){
-  // console.log("mouse is here!");
-  h1.innerText = "Mouse is here!";
-}
-function handleMouseLeave(){
-  h1.innerText = "Mouse is gone!";
-}
+const h1 = document.querySelector(".sexy-font");
+// console.dir(h1); // element 내부를 보고 싶을 때 dir을 사용한다.
+
+function handleH1Click(){
+ console.log("Title was clicked!");
+  h1.style.color = "blue"; // style 속성도 변경할 수 있다.
+};
+
+function handleH1Mouseenter(){
+  console.log("Mouse is here!");
+  h1.style.color = "green";
+};
+
+function handleH1Mouseleave(){
+  console.log("Mouse has gone...");
+  h1.style.color = "gray";
+};
 
 function handleWindowResize(){
-  document.body.style.backgroundColor = "tomato";
-}
+  document.body.style.backgroundColor = "tomato"; // window는 body를 조작할 수 있다.
+};
 function handleWindowCopy(){
-  alert("It was copied!")
-}
+  alert("Copied!");
+};
 function handleWindowOffline(){
-  alert("SOS! No WIFI!")
-}
+  alert("SOS! There's no WIFI!");
+};
 function handleWindowOnline(){
-  alert("All Goooooood!")
-}
+  alert("All Gooooooood!!!!");
+};
 
-// 2. 
-// h1.addEventListener("click", handleTitleClick);
-h1.onclick = handleTitleClick;
-// h1.addEventListener("mouseenter", handleMouseEnter);
-h1.onmouseenter = handleMouseEnter;
-// h1.addEventListener("mouseleave", handleMouseLeave);
-h1.onmouseleave = handleMouseLeave;
+h1.addEventListener("click", handleH1Click); // click event
+// h1.onclick = handleH1Click; // 위와 동일한 이벤트 코드이다.
+// addEventListener를 더 선호하는 이유는 removeEventListener를 사용해서 제거할 수 있기 때문이다.
+h1.addEventListener("mouseenter", handleH1Mouseenter); // mouseenter event
+h1.addEventListener("mouseleave", handleH1Mouseleave); // mouseleave event
 
-//  1. 이벤트 대상인 title을 선언한다.
-//  2. title에게 감지해야 할 이벤트를 정해주기 위해, 괄호 안에 어떤 상태일 때 어떤 함수를 실행할지를 정한다.
-//  3. 실행을 반복할 함수 코드를 만들어 준다.
-//  => 내가 직접 실행버튼을 누르지 않고, JavaScript에 이 function이름을 넘겨줘서 유저가 title을 click할 경우에 JavaScript가 실행버튼을 대신 눌러주게끔 하는 것이다.
-
+// window 사용하기
 window.addEventListener("resize", handleWindowResize);
 window.addEventListener("copy", handleWindowCopy);
 window.addEventListener("offline", handleWindowOffline);
 window.addEventListener("online", handleWindowOnline);
+
+
+// function을 사용하는 패턴 결론!
+//  1. 이벤트 대상(h1)을 선언한다.
+//  2. h1에게 감지해야 할 이벤트를 정해주기 위해, 괄호 안에 어떤 상태일 때 어떤 함수를 실행할지를 정한다.
+//  3. 실행을 반복할 함수 코드를 만들어 준다.
+//  => 내가 직접 실행버튼을 누르지 않고, JavaScript에 이 function이름을 넘겨줘서 유저가 title을 click할 경우에 JavaScript가 실행버튼을 대신 눌러주게끔 하는 것이다.
 */
+
+
+
+
+
+
+
 
 
 /* 과제1
@@ -130,7 +138,7 @@ h1.addEventListener("click", handleTitleClick);
  */
 
 
-
+/*
 const h1 = document.querySelector(".hello h1");
 
 function handleTitleClick(){
@@ -154,3 +162,4 @@ function handleTitleClick(){
 }
 
 h1.addEventListener("click", handleTitleClick);
+*/
