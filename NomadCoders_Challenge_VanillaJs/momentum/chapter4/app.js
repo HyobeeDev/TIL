@@ -142,7 +142,7 @@ function paintGreetings (username) { // greeting 실행하기(인사말 나오�
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
-const savedUsername = localStorage.getItem(USERNAME_KEY); // 저장된 유저이름을 받아오는 변수
+const savedUsername = localStorage.getItem(USERNAME_KEY); // 로그인 후에 저장된 유저이름을 받아오는 변수
 
 if (savedUsername === null) { // 저장된 유저이름과 일치하지 않으면 로그인 폼 보여주기
   loginForm.classList.remove(HIDDEN_CLASSNAME);
