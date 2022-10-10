@@ -53,8 +53,85 @@ window.addEventListener("online", handleWindowOnline);
 */
 
 
+  
 
 
+/*
+// h1을 누르면 blue, 다시 누르면 tomato 컬러로 변경하려면?
+const h1 = document.querySelector(".sexy-font");
+
+function handleH1Click(){
+  // console.log(h1.style.color); // 콘솔에 아무것도 나오지 않음. 여기서 h1은 setter 역할
+  // h1.style.color = "blue";
+  // console.log(h1.style.color); // 콘솔에 blue라고 나옴. 색상값을 확인할 수 있음. h1은 여기서 getter 역할
+  // 위의 세줄 코드를 통해 h1이 setter, getter 역할을 모두 한다는 것과 콘솔에서 현재 컬러값을 알아낼 수 있음을 확인.
+
+  // --- 클릭시 색상이 번갈아가며 변하도록 조건문 쓰기 ---
+  // if (h1.style.color === "blue") {
+  //   h1.style.color = "tomato";
+  // } else {
+  //   h1.style.color = "blue";
+  // }
+
+  // --- 조건문 더 깔끔하게 만들기 ---
+  const currentColor = h1.style.color;
+  let newColor; // 클릭 이벤트 후에 변경될 컬러를 위해서 선언하지만 비워두기.
+  if (currentColor === "blue") {
+    newColor = "tomato";
+  } else {
+    newColor = "blue";
+  }
+  h1.style.color = newColor; // 최종적으로 변경된 컬러가 현재 컬러가 될 수 있도록 선언해준다.
+};
+
+h1.addEventListener("click", handleH1Click);
+
+// JavaScript, HTML 간의 춤사위의 완성!
+// 1. find the element 엘리먼트를 찾아라
+// 2. Listen for an event 이벤트를 감지해라
+// 3. React to that event 그 이벤트에 반응해라
+*/
+
+
+
+
+
+// --- style은 CSS에서 정리하자! ---
+const h1 = document.querySelector(".sexy-font");
+
+function handleH1Click(){
+  // h1.className = "clicked"; //CSS에 .clicked를 작성하고 클래스이름을 붙여서 소통한다.
+  
+  // if (h1.className === "clicked") { // 여기서 h1은 getter이자 setter이다.
+  //   h1.className = "";
+  // } else {
+  //   h1.className = "clicked"; // clicked 부분은 내가 만든 거기 때문에 여러번 타이핑하다가 오타가 나기 쉽다.
+  // };
+
+  // --- 오류 가능성을 줄여보자. --- string을 변수에 저장하는 것은 아주아주아주 유용하다!
+  // const clickedClass = "clicked"; // 클래스명이 변경된다면 여기에 한번만 붙여넣으면 되니까 오류 가능성이 줄어든다. 그리고 이 변수를 여러 번 쓰다가 오타가 생기면 콘솔에서 오류가 뜨니까 확인 가능하다.
+  // if (h1.className === clickedClass) {
+  //   h1.className = "";
+  // } else {
+  //   h1.className = clickedClass; 
+  // };
+  // 하지만 여기에도 맹점이 있다. className은 기존의 class name을 완전히 없애버림.
+
+  // --- 기존의 class name은 살리고, 새로운 class name을 붙여보자! ---
+  // const clickedClass = "clicked"; 
+  // if(h1.classList.contains(clickedClass)) {
+  //   h1.classList.remove(clickedClass);
+  // } else {
+  //   h1.classList.add(clickedClass);
+  // }
+  // 이러한 액션은 개발자들이 매우 자주 사용한다. 그래서 이를 편하게 해주는 function이 있다.
+
+  // --- toggle로 편하게 짜보자! --- 위의 다섯줄을 toggle로 대체하기
+  // toggle function은 클래스가 있는지, 없는지를 체크하고 클래스이름을 추가하거나 삭제해준다.
+  h1.classList.toggle("clicked");
+}
+
+h1.addEventListener("click", handleH1Click);
 
 
 
@@ -103,63 +180,4 @@ window.addEventListener(
   "contextmenu",
   superEventHandler.handleWindowContextmenu
 );
-*/
-/*
-const h1 = document.querySelector(".hello h1");
-function handleTitleClick(){
-  // console.log(h1.style.color); // h1은 여기서 setter 역할
-  // h1.style.color = "blue"
-  // console.log(h1.style.color); // h1은 여기서 getter 역할
-  // 위의 세줄 코드를 통해 h1이 setter, getter 역할을 모두 한다는 것과 콘솔에서 현재 컬러값을 알아낼 수 있음을 확인.
-  
-  // 현재 컬러값이 OO이라면 XX로 바꿔주기 => if문
-  // 1. 직관적인 if문
-  // if(h1.style.color === "blue"){
-  //   h1.style.color = "tomato";
-  // } else {
-  //   h1.style.color = "blue"
-  // }
-
-  // 2. 읽기 좋은 형태로 바뀌기
-  const currentColor = h1.style.color;
-  let newColor;
-  if (currentColor === "blue") {
-    newColor = "tomato";
-  } else {
-    newColor = "blue";
-  }
-  h1.style.color = newColor;
-}
-h1.addEventListener("click", handleTitleClick);
-
-// 1. find the element 엘리먼트를 찾아라
-// 2. Listen for an event 이벤트를 감지해라
-// 3. React to that event 그 이벤트에 반응해라
- */
-
-
-/*
-const h1 = document.querySelector(".hello h1");
-
-function handleTitleClick(){
-  // const clickedClass = "clicked";
-  // if(h1.className === clickedClass){
-  //   h1.className = "";
-  // } else {
-  //   h1.className = clickedClass;
-  // }
-
-  // 클래스명 개별적으로 사용하기 위해 classList 사용
-  // const clickedClass = "clicked";
-  // if(h1.classList.contains(clickedClass)){
-  //   h1.classList.remove(clickedClass);
-  // } else {
-  //   h1.classList.add(clickedClass);
-  // }
-
-  // 위의 다섯줄을 toggle로 대체하기
-  h1.classList.toggle("clicked");
-}
-
-h1.addEventListener("click", handleTitleClick);
 */
