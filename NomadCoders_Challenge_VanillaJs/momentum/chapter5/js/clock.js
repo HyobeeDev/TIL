@@ -31,8 +31,17 @@ const clock = document.querySelector("h2#clock");
 
 function getClock() {
   const date = new Date();
-  clock.innerText = (`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
+  const hours = String(date.getHours()).padStart(2, "0"); // number타입으로 받은 데이트값을 String으로 감싸서 문자로 만들어주기
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+  const seconds = String(date.getSeconds()).padStart(2, "0");
+  clock.innerText = `${hours}:${minutes}:${seconds}`;
 };
 
 getClock(); // 바로 실행되게 해서 1초 뒤에 실행되는 간격을 메워줌.
 setInterval(getClock, 1000); // 1초마다 시간이 찍히도록 인터벌을 찍어준다.
+
+// padStart(): string에 쓸 수 있는 function으로, 몇자리를 지정하여 앞쪽에 비는 공간에는 지정하는 숫자를 넣어준다.
+// 콘솔에 찍어보자.
+// "1".padStart(자리수, "넣을 글자")
+// "1".padStart(2, "0") => "01"
+// padEnd(): 동일한 기능으로 뒷자리에 채워준다.
