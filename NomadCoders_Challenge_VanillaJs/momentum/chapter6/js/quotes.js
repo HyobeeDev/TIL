@@ -44,19 +44,7 @@ const quotes = [
 const quote = document.querySelector("#quote span:first-child");
 const author = document.querySelector("#quote span:last-child");
 
-// console.log(quotes[10-1]); 
-// 랜덤으로 quotes 객체 안의 0~9까지를 보여주려면? 
+const todaysQoute = quotes[Math.floor(Math.random() * quotes.length)];
 
-// 콘솔에 찍어보자.
-// Math.random() // 랜덤으로 숫자를 보여줌. 근데 0~1사이라서 소숫점임
-// Math.random() * 10
-// Math.round() // 반올림
-// Math.ceil() // 올림
-// Math.floor() // 내림
-
-// 방법1.
-// console.log(quotes[Math.floor(Math.random() * 10)]); // 여기서 문제점은 배열이 더 늘어날 수도 있다는 점이다.
-const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
-
-quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;
+quote.innerText = todaysQoute.quote;
+author.innerText = todaysQoute.author;
