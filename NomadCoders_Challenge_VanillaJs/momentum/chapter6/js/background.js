@@ -18,4 +18,6 @@ bgImage.src = `img/${chosenImage}`;
 
 // 4. 완성된 img 태그를 body에 실제로 연결하기
 document.body.appendChild(bgImage);
-// appendChild는 bgImage를 body에 진짜로 연결해준다.
+// document.body.prepend(bgImage);
+// appendChild는 bgImage를 body의 맨 앞줄에 연결해준다.
+// prepend는 맨 뒷줄에 붙여준다.
