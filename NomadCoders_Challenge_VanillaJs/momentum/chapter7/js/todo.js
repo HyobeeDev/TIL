@@ -4,7 +4,7 @@ const toDoInput = toDoForm.querySelector("input")
 const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
-
+``
 let toDos = [];
 
 function saveToDos() {
@@ -24,13 +24,16 @@ function deleteToDo(event) {
     // 버튼의 부모에 접근해서 부모자체를 지워버리면서 삭제를 구현하자!
     const li = event.target.parentElement;
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    saveToDos();
 };
 
 function paintToDo(newTodo) {
     // console.log("I will paint " + newTodo);
     const li = document.createElement("li");
+    li.id = newTodo.id;
     const span = document.createElement("span");
-    span.innerText = newTodo;  //span에 인풋 입력값 표시하도록 만들기
+    span.innerText = newTodo.text;  //span에 인풋 입력값 표시하도록 만들기
     const button = document.createElement("button");
     button.innerText = "❌";
     button.addEventListener("click", deleteToDo);
@@ -49,8 +52,12 @@ function handleToDoSubmit(event) {
     // console.log(newTodo, toDoInput.value);
     toDoInput.value = ""; // 2. input에 내용을 치고 엔터를 누르면 새로고침은 막혔지만 값은 없어지게 하기
     // console.log(newTodo, toDoInput.value);
-    toDos.push(newTodo); // paint 하기 전에 toDos 배열에 밀어 넣어주기
-    paintToDo(newTodo);
+    const newTodoObj = {
+        text: newTodo,
+        id: Date.now()
+    };
+    toDos.push(newTodoObj); // paint 하기 전에 toDos 배열에 밀어 넣어주기
+    paintToDo(newTodoObj);
     saveToDos();
 };
 
@@ -70,5 +77,4 @@ if(savedToDos !== null) {
     // forEach: 배열에 있는 각각의 item에 대해서 function을 실행해준다. 공평하게 배열안에 것들에게 다돌아가면서 한번씩 실행해주는 거다.
     // parsedToDos.forEach((item) => console.log("This is the turn of ", item));
     parsedToDos.forEach(paintToDo);
-
 };
