@@ -5,9 +5,7 @@ const toDoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
 
-const toDos = [
-
-]
+let toDos = [];
 
 function saveToDos() {
     // localStorage.setItem("todos",toDos);
@@ -63,12 +61,14 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 // };
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
-console.log(savedToDos);
-if(saveToDos !== null) {
+// console.log(savedToDos);
+if(savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
     // console.log(parsedToDos); // 배열형태로 변경되었는지 확인하기
     // parsedToDos.forEach(sayHello);
     // forEach: 배열에 있는 각각의 item에 대해서 function을 실행해준다. 공평하게 배열안에 것들에게 다돌아가면서 한번씩 실행해주는 거다.
-    parsedToDos.forEach((item) => console.log("This is the turn of ", item));
+    // parsedToDos.forEach((item) => console.log("This is the turn of ", item));
+    parsedToDos.forEach(paintToDo);
 
 };
